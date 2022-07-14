@@ -1,0 +1,47 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 185px;
+  height: 50px;
+  max-width: 100%;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #2647E6;
+  text-decoration: none;
+  border-radius: 12px;
+  background: #E9EDFD;
+}
+.btn--blue {
+  color: #fff;
+  background: #2647E6;
+}
+.more-btn {
+  width: 69px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #E9EDFD;
+  border-radius: 13px;
+  .transition();
+  
+  svg {
+    display: block;
+    width: 10px;
+    height: 10px;
+    fill: #2647E6;
+    .transition();
+  }
+  &:hover,
+  &:active {
+    background: #254BFF;
+    .transition();
+    
+    svg {
+      fill: #fff;
+      .transition();
+    }
+  }
+}

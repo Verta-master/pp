@@ -1,0 +1,120 @@
+.product {
+  margin-bottom: 100px;
+}
+.product__subtitle {
+  margin-top: 0;
+  margin-bottom: 30px;
+  max-width: 235px;
+}
+.product__nav,
+.product__list {
+  .reset();
+  list-style: none;
+}
+.product__item {
+  position: relative;
+  margin-bottom: 10px;
+}
+.product__link {
+  min-height: 199px;
+  padding: 20px 20px 25px 25px;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  background: #FFFFFF;
+  border-radius: 30px;
+  
+  h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 206px;
+  }
+  .more-btn {
+    margin-left: auto;
+    margin-top: auto;
+    background: #254BFF;
+    
+    svg {
+      fill: #fff;
+    }
+  }
+}
+.product__icon {
+  width: 47px;
+  height: 47px;
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 22px -6px rgba(24, 39, 75, 0.12), 0px 14px 64px -4px rgba(24, 39, 75, 0.12);
+  border-radius: 14px;
+  
+  img {
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+}
+.product__label {
+  position: absolute;
+  top: 21px;
+  right: 20px;
+  display: block;
+  width: 65px;
+  height: 24px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 24px;
+  text-align: center;
+  background: #C9F28D;
+  border-radius: 20px;
+}
+.product__block {
+  padding: 15px;
+  padding-top: 45px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(141.98deg, #4E6BF1 45.37%, #2040E4 162.28%);
+  border-radius: 25px;
+  
+  h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+}
+.product__more {
+  margin-bottom: 18px;
+  
+  a {
+    position: relative;
+    text-decoration: none;
+    
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background-color: rgba(255,255,255,0.4);
+    }
+  }
+}
+.product__promo {
+  margin-top: 0;
+  margin-bottom: 47px;
+}
+.product__img {
+  width: 100%;
+  margin-top: 47px;
+  border-radius: 12px;
+  overflow: hidden;
+  
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
