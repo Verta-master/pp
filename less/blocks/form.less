@@ -166,3 +166,40 @@
     background-image: url(../img/icons/call.svg);
   }
 }
+.form__checkbox {
+  display: none;
+}
+.form__checkbox-label {
+  display: block;
+  position: relative;
+  padding-left: 39px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #737581;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background-color: #E9EDFD;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 14px 10px;
+  }
+  a {
+    text-decoration: underline;
+    
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+  }
+}
+.form__checkbox:checked + .form__checkbox-label::before {
+  background-image: url(../img/icons/check.svg);
+}

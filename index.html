@@ -29,7 +29,7 @@
           <a href="tel:+78002000600" class="header__phone">8 800 2000 600</a>
           <p class="header__comment">Звонок бесплатный</p>
         </div>
-        <a href="#" class="btn header__btn">Обратный звонок</a>
+        <a data-fancybox data-src="#call" href="javascript:;" class="btn header__btn">Обратный звонок</a>
       </div>
       
       <nav class="menu">
@@ -56,6 +56,86 @@
       </nav>
     </div>
   </header>
+  
+  <nav class="mobile">
+    <div class="wrapper">
+      <div class="mobile__wrap">
+        <a href="#" class="mobile__link mobile__link--service">услуги</a>
+        <button type="button" class="mobile__link mobile__link--menu">меню</button>
+        <a href="#" class="mobile__link mobile__link--contacts">контакты</a>
+      </div>
+    </div>
+  </nav>
+  
+  <nav class="menu-mobile">
+    <div class="wrapper menu-mobile__wrap">
+      <ul class="menu-mobile__list">
+        <li class="menu-mobile__item">
+          <a href="#" class="menu-mobile__link">Независимые гарантии</a>
+          <button type="button" class="menu-mobile__btn"></button>
+          <ul class="menu-mobile__sublist">
+            <li class="menu-mobile__subitem"><a href="#">НГ 223 - ФЗ</a></li>
+            <li class="menu-mobile__subitem"><a href="#">НГ 44 - ФЗ</a></li>
+            <li class="menu-mobile__subitem"><a href="#">НГ 185 - ФЗ/615 - ПП</a></li>
+            <li class="menu-mobile__subitem"><a href="#">НГ на аванс</a></li>
+            <li class="menu-mobile__subitem"><a href="#">НГ на участие</a></li>
+            <li class="menu-mobile__subitem"><a href="#">Коммерческая НГ</a></li>
+            <li class="menu-mobile__subitem"><a href="#">НГ на гарантийный период</a></li>
+          </ul>
+        </li>
+        <li class="menu-mobile__item">
+          <a href="#" class="menu-mobile__link">Услуги компании</a>
+          <button type="button" class="menu-mobile__btn"></button>
+          <ul class="menu-mobile__sublist">
+            <li class="menu-mobile__subitem"><a href="#">Гарантийные обязательства</a></li>
+            <li class="menu-mobile__subitem"><a href="#">Тендерное сопровождение</a></li>
+            <li class="menu-mobile__subitem"><a href="#">Тендерный займ</a></li>
+            <li class="menu-mobile__subitem"><a href="#">Кредит на исполнение контракта</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="menu-mobile__nav">
+        <li class="menu-mobile__item">
+          <a href="#" class="menu-mobile__link">Список банков</a>
+        </li>
+        <li class="menu-mobile__item">
+          <a href="#" class="menu-mobile__link">Тарифы</a>
+        </li>
+        <li class="menu-mobile__item">
+          <a href="#" class="menu-mobile__link">Калькулятор</a>
+        </li>
+        <li class="menu-mobile__item">
+          <a href="#" class="menu-mobile__link">Блог</a>
+        </li>
+        <li class="menu-mobile__item">
+          <a href="#" class="menu-mobile__link">Контакты</a>
+        </li>
+        <li class="menu-mobile__item">
+          <a href="#" class="menu-mobile__link">О компании</a>
+        </li>
+        <li class="menu-mobile__item">
+          <a href="#" class="menu-mobile__link">Реквизиты</a>
+        </li>
+        <li class="menu-mobile__item">
+          <a href="#" class="menu-mobile__link">Отзывы</a>
+        </li>
+        <li class="menu-mobile__item">
+          <a href="#" class="menu-mobile__link">FAQ</a>
+        </li>
+      </ul>
+      <div class="menu-mobile__contacts">
+        <div class="menu-mobile__phone">
+          <a href="tel:+78002000600">8 800 2000 600</a>
+          <span>Звонок бесплатный</span>
+        </div>
+        <div class="menu-mobile__social">
+          <a href="#" class="menu-mobile__net menu-mobile__net--tg">Telegram</a>
+          <a href="#" class="menu-mobile__net menu-mobile__net--wa">WhatsApp</a>
+        </div>
+      </div>
+      <button type="button" class="menu-mobile__close"></button>
+    </div>
+  </nav>
   
   <main>
     <section class="promo">
@@ -796,7 +876,7 @@
           </div>
         </div>
         <div class="footer__feedback">
-          <a href="#" class="btn btn--blue footer__btn">Обратный звонок</a>
+          <a data-fancybox data-src="#call" href="javascript:;" class="btn btn--blue footer__btn">Обратный звонок</a>
           <a href="tel:+78002000600" class="footer__call">8 800 2000 600</a>
           <a href="mailto:info@prof-p.ru" class="footer__mail">info@prof-p.ru</a>
           <p class="footer__time">Пн - Пт:  09:00 — 18:00</p>
@@ -821,12 +901,45 @@
     </div>
   </footer>
   
+  <!-- Modal window -->
+  <div style="display: none;" id="call" class="modal">
+    <div class="modal__wrap">
+      <p class="modal__title">Написать нам</p>
+      <p class="modal__subtitle">Свяжитесь с нами любым удобным для вас способом, заполните форму ниже или напишите нам в меседжеры</p>
+      <form action="#" class="form">
+        <div class="form__line">
+          <div class="form__field form__field--name">
+            <input type="text" class="form__input" placeholder="Ваше имя*" value="Егоров Дмитрий" required>
+          </div>
+          <div class="form__field form__field--tel">
+            <input type="tel" class="form__input" placeholder="Номер телефона*" required>
+          </div>
+        </div>
+        <button type="submit" class="btn btn--blue form__btn">Отправить</button>
+        <input type="checkbox" id="checkbox2" class="form__checkbox" checked>
+        <label for="checkbox2" class="form__checkbox-label">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь c <a href="#">политикой конфиденциальности.</a></label>
+      </form>
+      <div class="modal__social">
+        <p><b>Для быстрой связи</b></p>
+        <ul class="social">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--wa" title="WhatsApp">Telegram</a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link social__link--tg" title="Telegram">WhatsApp</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
   <script src="js/jquery.ui.touch-punch.min.js"></script>
   <script src="js/range-slider.js"></script>
+  <script src="js/jquery.nicescroll.min.js"></script>
   <script src="js/script.js"></script>
   
   <!-- Sliders -->
