@@ -13,7 +13,7 @@ $( function() {
   $( "#slider-range-max2" ).slider({
     range: "max",
     min: 1,
-    max: 1000000,
+    max: 89,
     value: "",
     slide: function( event, ui ) {
       $( "#amount2" ).val( ui.value );
