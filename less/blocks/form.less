@@ -10,12 +10,17 @@
   padding: 0 20px;
   font-weight: 500;
   font-size: 14px;
+  color: #2647E6;
   line-height: 1.2;
   border: 1px solid #C5C9D5;
   border-radius: 12px;
+  
+  &::placeholder {
+    color: #737581;
+    opacity: 1;
+  }
 }
 .form__select {
-  color: #2647E6;
   appearance: none;
   background-image: url(../img/icons/select-arrow.svg);
   background-repeat: no-repeat;
@@ -119,6 +124,8 @@
   }
 }
 .form__btn {
+  width: 100%;
+  
   span {
     display: none;
   }
@@ -137,4 +144,25 @@
   font-size: 12px;
   line-height: 1.4;
   color: #737581;
+}
+.form__field {
+  position: relative;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 18px;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &--name::after {
+    background-image: url(../img/icons/user.svg);
+  }
+  &--tel::after {
+    background-image: url(../img/icons/call.svg);
+  }
 }

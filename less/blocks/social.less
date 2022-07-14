@@ -1,0 +1,24 @@
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  .reset();
+  list-style: none;
+}
+.social__item {
+  margin-left: 16px;
+}
+.social__link {
+  display: block;
+  width: 37px;
+  height: 37px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+  &--wa {
+    background-image: url(../img/icons/whatsapp.svg);
+  }
+  &--tg {
+    background-image: url(../img/icons/telegram.svg);
+  }
+}

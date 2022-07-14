@@ -121,3 +121,35 @@ h5 {
   margin-left: auto;
   margin-right: auto;
 }
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  
+  h2 {
+    margin: 0;
+  }
+}
+.more {
+  position: relative;
+  padding-right: 25px;
+  text-align: right;
+  color: #2647E6;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: none;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background-image: url(../img/icons/arrow-top-blue.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
