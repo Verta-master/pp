@@ -558,7 +558,8 @@
     position: relative;
   }
   .partner__img {
-    width: 330px;
+//    width: 330px;
+    width: 43%;
     height: 428px;
     position: absolute;
     left: 52%;
@@ -632,7 +633,7 @@
     display: flex;
     justify-content: space-between;
   }
-  .form__field {
+  .feedback .form__field {
     width: 48%;
     margin-bottom: 30px;
     
@@ -700,9 +701,11 @@
   .footer .wrapper {
     padding-bottom: 47px;
   }
+  .menu-mobile__btn,
   .footer__down {
     display: none;
   }
+  .menu-mobile__sublist,
   .footer__phone {
     display: block;
   }
@@ -716,6 +719,8 @@
     width: 40%;
     margin-bottom: 13px;
   }
+  .menu-mobile__item,
+  .menu-mobile__social,
   .footer__call {
     width: 50%;
   }
@@ -724,5 +729,46 @@
   }
   .footer__btn {
     width: 210px;
+  }
+  .menu-mobile__close {
+    position: absolute;
+    top: 27px;
+    right: 45px;
+    margin-top: 0;
+  }
+  .menu-mobile__contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu-mobile__phone {
+    margin-bottom: 0;
+    width: 50%;
+    
+    a {
+      font-size: 20px;
+      margin-bottom: 9px;
+    }
+  }
+  .menu-mobile__wrap {
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 65px;
+    padding-top: 100px;
+  }
+  .menu-mobile__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 85px;
+  }
+  .menu-mobile__nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 200px;
+  }
+  .menu-mobile__item:nth-child(4) {
+    margin-top: 35px;
   }
 }

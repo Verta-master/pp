@@ -38,7 +38,7 @@
           <li class="menu__item menu__item--dropdown">
             <a href="#" class="menu__link">Финансовые продукты</a>
           </li>
-          <li class="menu__item">
+          <li class="menu__item menu__item--active">
             <a href="#" class="menu__link">Банки</a>
           </li>
           <li class="menu__item">
@@ -145,7 +145,7 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide promo__slide">
               <picture class="promo__img">
-                <source media="(min-width: 1200px)" srcset="img/images/slide-1.png">
+                <source media="(min-width: 1100px)" srcset="img/images/slide-1.png">
                 <source media="(min-width: 480px)" srcset="img/images/slide-1tablet.png">
                 <img src="img/images/slide-1mobile.png" srcset="img/images/slide-1mobile.png" alt="Выгодные предложения от банков партнеров">
               </picture>
@@ -173,7 +173,7 @@
             </div>
             <div class="swiper-slide promo__slide">
               <picture class="promo__img">
-                <source media="(min-width: 1200px)" srcset="img/images/slide-2.png">
+                <source media="(min-width: 1100px)" srcset="img/images/slide-2.png">
                 <source media="(min-width: 480px)" srcset="img/images/slide-2tablet.png">
                 <img src="img/images/slide-2mobile.png" srcset="img/images/slide-2mobile.png" alt="Выгодные предложения от банков партнеров">
               </picture>
@@ -188,7 +188,7 @@
             </div>
             <div class="swiper-slide promo__slide promo__slide--light">
               <picture class="promo__img">
-                <source media="(min-width: 1200px)" srcset="img/images/slide-3.png">
+                <source media="(min-width: 1100px)" srcset="img/images/slide-3.png">
                 <source media="(min-width: 480px)" srcset="img/images/slide-3tablet.png">
                 <img src="img/images/slide-3mobile.png" srcset="img/images/slide-3mobile.png" alt="Выгодные предложения от банков партнеров">
               </picture>
@@ -528,7 +528,7 @@
           <table>
             <tr>
               <th>Банк<span>/Продукт</span></th>
-              <th><i>Продукт/</i><span>Дата и время</span></th>
+              <th><i>Продукт</i><span>Дата и время</span></th>
               <th>Дата и время выдачи</th>
               <th>Время одобрения</th>
             </tr>
@@ -910,13 +910,11 @@
       <p class="modal__title">Написать нам</p>
       <p class="modal__subtitle">Свяжитесь с нами любым удобным для вас способом, заполните форму ниже или напишите нам в меседжеры</p>
       <form action="#" class="form">
-        <div class="form__line">
-          <div class="form__field form__field--name">
-            <input type="text" class="form__input" placeholder="Ваше имя*" value="Егоров Дмитрий" required>
-          </div>
-          <div class="form__field form__field--tel">
-            <input type="tel" class="form__input" placeholder="Номер телефона*" required>
-          </div>
+        <div class="form__field form__field--name">
+          <input type="text" class="form__input" placeholder="Ваше имя*" value="Егоров Дмитрий" required>
+        </div>
+        <div class="form__field form__field--tel">
+          <input type="tel" class="form__input" placeholder="Номер телефона*" required>
         </div>
         <button type="submit" class="btn btn--blue form__btn">Отправить</button>
         <input type="checkbox" id="checkbox2" class="form__checkbox" checked>
