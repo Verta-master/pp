@@ -182,15 +182,16 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -2px;
     left: 0;
     width: 24px;
     height: 24px;
-    background-color: #E9EDFD;
+    background-color: #fff;
     border-radius: 5px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 14px 10px;
+    border: 1px solid #D5D6D9;
   }
   a {
     text-decoration: underline;
@@ -203,4 +204,6 @@
 }
 .form__checkbox:checked + .form__checkbox-label::before {
   background-image: url(../img/icons/check.svg);
+  background-color: #E9EDFD;
+  border-color: #E9EDFD;
 }
