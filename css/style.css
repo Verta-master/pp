@@ -1148,6 +1148,7 @@ h5 {
   background-repeat: no-repeat;
   background-position: right 15px center;
   background-size: 15px 10px;
+  cursor: pointer;
 }
 .form__select option[disabled] {
   display: none;
@@ -1308,6 +1309,7 @@ h5 {
   font-size: 12px;
   line-height: 1.4;
   color: #737581;
+  cursor: pointer;
 }
 .form__checkbox-label::before {
   content: "";

@@ -62,3 +62,6 @@ var mySwiper = new Swiper ('.menu__slider', {
   slidesPerView: 1,
   spaceBetween: 20,
 });
+
+//Select styles
+//$('select').niceSelect();
