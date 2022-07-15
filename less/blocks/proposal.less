@@ -5,8 +5,8 @@
 .proposal__title {
   margin-top: 0;
   margin-bottom: 28px;
-  padding: 15px 30px;
-  padding-right: 60px;
+  padding: 16px 30px;
+//  padding-right: 60px;
   text-align: center;
   font-weight: 600;
   font-size: 13px;
@@ -37,7 +37,8 @@
     &:not(:first-child) {
       position: relative;
       margin-bottom: 10px;
-      padding: 25px;
+      padding: 20px 25px;
+      padding-top: 13px;
       background: #FFFFFF;
       border-radius: 20px;
     }
@@ -50,7 +51,7 @@
     
     &:first-child {
       padding-left: 25px;
-      margin-right: 5px;
+//      margin-right: 5px;
       
       &::after {
         content: "/";
@@ -58,7 +59,7 @@
       }
     }
     &:nth-child(2) {
-      margin-right: 92px;
+      margin-right: 34px;
     }
     &:last-child {
       padding-right: 25px;
@@ -72,6 +73,11 @@
     &:first-child {
       width: 100%;
       margin-bottom: 5px;
+      
+      img {
+        height: 35px;
+        width: auto;
+      }
     }
     &:nth-child(2),
     &:nth-child(3) {
@@ -79,6 +85,9 @@
       margin-bottom: 21px;
       padding-bottom: 18px;
       border-bottom: 1px solid #C5C9D5;
+    }
+    &:nth-child(3) {
+      text-align: center;
     }
   }
 }

@@ -17,7 +17,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 13px 25px;
+    padding: 14px 25px;
     
     &:first-child {
       padding-top: 17px;
@@ -46,8 +46,11 @@
     &:last-child {
       width: 25%;
     }
-    i {
+    i, em {
       font-style: normal;
+    }
+    &:nth-child(2) span {
+      display: block;
     }
   }
   table td {
