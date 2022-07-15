@@ -49,3 +49,16 @@ $('.footer__down').click(function() {
   $(this).toggleClass('footer__down--top');
   $(this).next().slideToggle();
 })
+
+//Desktop menu slider
+var mySwiper = new Swiper ('.menu__slider', {
+  pagination: {
+    el: '.menu__pagination',
+    clickable: true,
+  },
+  simulateTouch: false,
+  preventClicks: false,
+  preventClicksPropagation: false,
+  slidesPerView: 1,
+  spaceBetween: 20,
+});
