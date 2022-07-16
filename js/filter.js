@@ -24,7 +24,7 @@ $( function() {
 } );
 
 //Mobile filter
-if (window.innerWidth < 1100) {
+if (window.innerWidth < 1200) {
   $('.filter__title').click(function() {
     event.preventDefault();
     $('.filter__drop').addClass('filter__drop--open');
