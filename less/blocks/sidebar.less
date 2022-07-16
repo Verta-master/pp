@@ -1,0 +1,40 @@
+.sidebar__links {
+  margin-bottom: 25px;
+  overflow-x: hidden;
+}
+.sidebar__wrap {
+  width: 600px;
+  display: flex;
+  border-bottom: 1px solid #C5C9D5;
+}
+.sidebar__link {
+  position: relative;
+  display: block;
+  padding-bottom: 15px;
+  margin-right: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    opacity: 0;
+    height: 2px;
+    background-color: #2647E6;
+    .transition();
+  }
+  &--active {
+    color: #2647E6;
+    
+    &::after {
+      width: 100%;
+      opacity: 1;
+      .transition();
+    }
+  }
+}
