@@ -1170,11 +1170,24 @@
     margin-bottom: 20px;
   }
   .tariff__title {
+    min-height: 300px;
     padding-right: 224px;
     margin-bottom: 20px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    
+    h1 {
+      font-size: 22px;
+      line-height: 28px;
+    }
+    p {
+      margin-top: 0;
+    }
   }
   .tariff__btn {
     width: 167px;
+    margin-top: auto;
   }
   .tariff__list {
     display: flex;
@@ -1182,11 +1195,24 @@
     justify-content: space-between;
   }
   .tariff__item {
+    min-height: 133px;
     margin-bottom: 20px;
+    padding-left: 110px;
+    padding-right: 20px;
     width: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 24px;
     
     &:last-child {
       width: 100%;
+    }
+    &::before {
+      width: 60px;
+      height: 60px;
+      left: 30px;
     }
   }
   .tariff__block {
@@ -1197,15 +1223,23 @@
   .tariff {
     margin-bottom: 130px;
   }
+  .calc__proposal {
+    margin-top: 45px;
+  }
   .offer__top h2 {
     max-width: 320px;
   }
   .offer__top {
     margin-bottom: 20px;
+    padding-left: 30px;
   }
   .offer__row {
     font-size: 16px;
     line-height: 28px;
+    padding: 10px;
+  }
+  .offer__row--header {
+    height: 70px;
   }
   .offer__table-wrap {
     width: 1074px;
@@ -1229,7 +1263,7 @@
     line-height: 24px;
   }
   .offer__table {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
   .offer__btns {
     width: 345px;
@@ -1260,6 +1294,8 @@
     width: 49%;
     height: 323px;
     margin-bottom: 0;
+    padding: 45px;
+    padding-bottom: 30px;
   }
   .connect {
     margin-bottom: 50px;
