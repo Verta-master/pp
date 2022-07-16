@@ -51,6 +51,8 @@
   color: #737581;
   text-align: right;
 }
+#slider-range-sum,
+#slider-range-days,
 #slider-range-max2,
 #slider-range-max {
   position: absolute;
@@ -168,19 +170,35 @@
     background-image: url(../img/icons/call.svg);
   }
 }
+.form__radio,
 .form__checkbox {
   display: none;
 }
-.form__checkbox-label {
+.form__checkbox-label,
+.form__radio-label {
   display: block;
   position: relative;
   padding-left: 39px;
+  margin-bottom: 12px;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.4;
   color: #737581;
   cursor: pointer;
-  
+}
+.form__radio-label {
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #C5C9D5;
+    border-radius: 25px;
+  }
+}
+.form__checkbox-label {
   &::before {
     content: "";
     position: absolute;
@@ -204,10 +222,22 @@
     }
   }
 }
-.form__checkbox:checked + .form__checkbox-label::before {
-  background-image: url(../img/icons/check.svg);
-  background-color: #E9EDFD;
-  border-color: #E9EDFD;
+.form__checkbox:checked + .form__checkbox-label {
+  color: #141415;
+  
+  &::before {
+    background-image: url(../img/icons/check.svg);
+    background-color: #E9EDFD;
+    border-color: #E9EDFD;
+  }
+}
+.form__radio:checked + .form__radio-label {
+  color: #141415;
+  
+  &::before {
+    background-color: #2647E6;
+    border: 8px solid #E9EDFD;
+  }
 }
 .form__line--range {
   display: flex;
@@ -222,4 +252,8 @@
   .form__range--month {
     order: 3;
   }
+}
+#slider-range-sum,
+#slider-range-days {
+  bottom: 0;
 }

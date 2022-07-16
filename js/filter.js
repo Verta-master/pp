@@ -22,3 +22,24 @@ $( function() {
   });
   $( "#amount2" ).val( $( "#slider-range-days" ).slider( "value" ) + " дней");
 } );
+
+//Mobile filter
+if (window.innerWidth < 1100) {
+  $('.filter__title').click(function() {
+    event.preventDefault();
+    $('.filter__drop').addClass('filter__drop--open');
+    $('.overlay').toggleClass('overlay--show');
+    $('.filter__wrap').scroll(function(){
+      $('.filter__wrap').getNiceScroll().resize();
+    });
+  })
+  
+  $('.filter__title--close').click(function() {
+    $('.filter__drop').removeClass('filter__drop--open');
+    $('.overlay').removeClass('overlay--show');
+  })
+  
+  $('.filter__wrap').niceScroll({
+    cursorcolor: '#254BFF',
+  });
+}

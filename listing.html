@@ -225,94 +225,98 @@
         <div class="wrapper__columns">
           <aside class="sidebar">
             <div class="filter">
-              <div class="filter__wrap form">
+              <div class="filter__form form">
                 <p class="filter__title">Фильтр <span>( 123 предложения )</span></p>
                 <div class="filter__drop">
-                  <div class="filter__block">
-                    <p class="filter__subtitle">Сумма гарантии</p>
-                    <div class="filter__dropdown">
-                      <div class="form__range">
-                        <input type="text" id="amount" class="form__input" placeholder="От 0 млн ₽">
-                        <div id="slider-range-sum"></div>
+                  <p class="filter__title filter__title--close">Фильтр <span>( 123 предложения )</span></p>
+                  <div class="filter__wrap">
+                    <div class="filter__block">
+                      <p class="filter__subtitle">Сумма гарантии</p>
+                      <div class="filter__dropdown">
+                        <div class="form__range">
+                          <input type="text" id="amount" class="form__input" placeholder="От 0 млн ₽">
+                          <div id="slider-range-sum"></div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="filter__block">
-                    <p class="filter__subtitle">Сроки гарантии</p>
-                    <div class="filter__dropdown">
-                      <div class="form__range">
-                        <input type="text" id="amount2" class="form__input" placeholder="230 дней">
-                        <div id="slider-range-days"></div>
+                    <div class="filter__block">
+                      <p class="filter__subtitle">Сроки гарантии</p>
+                      <div class="filter__dropdown">
+                        <div class="form__range">
+                          <input type="text" id="amount2" class="form__input" placeholder="230 дней">
+                          <div id="slider-range-days"></div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="filter__block">
-                    <p class="filter__subtitle">Тип контракта</p>
-                    <div class="filter__dropdown">
-                      <input type="checkbox" id="checkbox01" class="form__checkbox">
-                      <label for="checkbox01" class="form__checkbox-label">44 - ФЗ</label>
-                      <input type="checkbox" id="checkbox02" class="form__checkbox">
-                      <label for="checkbox02" class="form__checkbox-label">223 - ФЗ</label>
-                      <input type="checkbox" id="checkbox03" class="form__checkbox">
-                      <label for="checkbox03" class="form__checkbox-label">223 - ФЗ</label>
-                      <input type="checkbox" id="checkbox04" class="form__checkbox" checked>
-                      <label for="checkbox04" class="form__checkbox-label">223 - ФЗ</label>
+                    <div class="filter__block">
+                      <p class="filter__subtitle">Тип контракта</p>
+                      <div class="filter__dropdown">
+                        <input type="checkbox" id="checkbox01" class="form__checkbox">
+                        <label for="checkbox01" class="form__checkbox-label">44 - ФЗ</label>
+                        <input type="checkbox" id="checkbox02" class="form__checkbox">
+                        <label for="checkbox02" class="form__checkbox-label">223 - ФЗ</label>
+                        <input type="checkbox" id="checkbox03" class="form__checkbox">
+                        <label for="checkbox03" class="form__checkbox-label">223 - ФЗ</label>
+                        <input type="checkbox" id="checkbox04" class="form__checkbox" checked>
+                        <label for="checkbox04" class="form__checkbox-label">223 - ФЗ</label>
+                      </div>
                     </div>
-                  </div>
-                  <div class="filter__block">
-                    <p class="filter__subtitle">Тип гарантии</p>
-                    <div class="filter__dropdown">
-                      <input type="checkbox" id="checkbox05" class="form__checkbox">
-                      <label for="checkbox05" class="form__checkbox-label">На участие</label>
-                      <input type="checkbox" id="checkbox06" class="form__checkbox">
-                      <label for="checkbox06" class="form__checkbox-label">На исполнение контракта</label>
-                      <input type="checkbox" id="checkbox07" class="form__checkbox">
-                      <label for="checkbox07" class="form__checkbox-label">На гарантийный период</label>
-                      <input type="checkbox" id="checkbox08" class="form__checkbox" checked>
-                      <label for="checkbox08" class="form__checkbox-label">На возврат аванса</label>
+                    <div class="filter__block">
+                      <p class="filter__subtitle">Тип гарантии</p>
+                      <div class="filter__dropdown">
+                        <input type="checkbox" id="checkbox05" class="form__checkbox">
+                        <label for="checkbox05" class="form__checkbox-label">На участие</label>
+                        <input type="checkbox" id="checkbox06" class="form__checkbox">
+                        <label for="checkbox06" class="form__checkbox-label">На исполнение контракта</label>
+                        <input type="checkbox" id="checkbox07" class="form__checkbox">
+                        <label for="checkbox07" class="form__checkbox-label">На гарантийный период</label>
+                        <input type="checkbox" id="checkbox08" class="form__checkbox" checked>
+                        <label for="checkbox08" class="form__checkbox-label">На возврат аванса</label>
+                      </div>
                     </div>
-                  </div>
-                  <div class="filter__block">
-                    <p class="filter__subtitle">Возраст компании</p>
-                    <div class="filter__dropdown">
-                      <input type="radio" id="radio01" name="radio1" class="form__radio">
-                      <label for="radio01" class="form__radio-label">3 месяца</label>
-                      <input type="radio" id="radio02" name="radio1" class="form__radio" checked>
-                      <label for="radio02" class="form__radio-label">6 месяцев</label>
-                      <input type="radio" id="radio03" name="radio1" class="form__radio">
-                      <label for="radio03" class="form__radio-label">12 месяцев</label>
+                    <div class="filter__block">
+                      <p class="filter__subtitle">Возраст компании</p>
+                      <div class="filter__dropdown">
+                        <input type="radio" id="radio01" name="radio1" class="form__radio">
+                        <label for="radio01" class="form__radio-label">3 месяца</label>
+                        <input type="radio" id="radio02" name="radio1" class="form__radio" checked>
+                        <label for="radio02" class="form__radio-label">6 месяцев</label>
+                        <input type="radio" id="radio03" name="radio1" class="form__radio">
+                        <label for="radio03" class="form__radio-label">12 месяцев</label>
+                      </div>
                     </div>
-                  </div>
-                  <div class="filter__block">
-                    <p class="filter__subtitle">Валюта</p>
-                    <div class="filter__dropdown">
-                      <input type="checkbox" id="checkbox09" class="form__checkbox">
-                      <label for="checkbox09" class="form__checkbox-label">Рубли</label>
-                      <input type="checkbox" id="checkbox10" class="form__checkbox">
-                      <label for="checkbox10" class="form__checkbox-label">Евро</label>
-                      <input type="checkbox" id="checkbox11" class="form__checkbox">
-                      <label for="checkbox11" class="form__checkbox-label">Доллары</label>
+                    <div class="filter__block">
+                      <p class="filter__subtitle">Валюта</p>
+                      <div class="filter__dropdown">
+                        <input type="checkbox" id="checkbox09" class="form__checkbox">
+                        <label for="checkbox09" class="form__checkbox-label">Рубли</label>
+                        <input type="checkbox" id="checkbox10" class="form__checkbox">
+                        <label for="checkbox10" class="form__checkbox-label">Евро</label>
+                        <input type="checkbox" id="checkbox11" class="form__checkbox">
+                        <label for="checkbox11" class="form__checkbox-label">Доллары</label>
+                      </div>
                     </div>
-                  </div>
-                  <div class="filter__block">
-                    <p class="filter__subtitle">Регион</p>
-                    <div class="filter__dropdown">
-                      <input type="checkbox" id="checkbox12" class="form__checkbox">
-                      <label for="checkbox12" class="form__checkbox-label">Крым</label>
-                      <input type="checkbox" id="checkbox13" class="form__checkbox">
-                      <label for="checkbox13" class="form__checkbox-label">Северный-Кавказ</label>
+                    <div class="filter__block">
+                      <p class="filter__subtitle">Регион</p>
+                      <div class="filter__dropdown">
+                        <input type="checkbox" id="checkbox12" class="form__checkbox">
+                        <label for="checkbox12" class="form__checkbox-label">Крым</label>
+                        <input type="checkbox" id="checkbox13" class="form__checkbox">
+                        <label for="checkbox13" class="form__checkbox-label">Северный-Кавказ</label>
+                      </div>
                     </div>
-                  </div>
-                  <div class="filter__block">
-                    <p class="filter__subtitle">Поручительство</p>
-                    <div class="filter__dropdown">
-                      <input type="radio" id="radio04" name="radio2" class="form__radio">
-                      <label for="radio04" class="form__radio-label">Да</label>
-                      <input type="radio" id="radio05" name="radio2" class="form__radio">
-                      <label for="radio05" class="form__radio-label">Нет</label>
+                    <div class="filter__block">
+                      <p class="filter__subtitle">Поручительство</p>
+                      <div class="filter__dropdown">
+                        <input type="radio" id="radio04" name="radio2" class="form__radio">
+                        <label for="radio04" class="form__radio-label">Да</label>
+                        <input type="radio" id="radio05" name="radio2" class="form__radio">
+                        <label for="radio05" class="form__radio-label">Нет</label>
+                      </div>
                     </div>
+                    <a href="#" class="btn btn--blue filter__btn">Применить</a>
+                    <a href="#" class="btn filter__cancel">Очистить фильтры</a>
                   </div>
-                  <a href="#" class="btn filter__cancel">Очистить фильтры</a>
                 </div>
               </div>
             </div>
@@ -676,6 +680,8 @@
       </div>
     </div>
   </footer>
+  
+  <div class="overlay"></div>
   
   <!-- Modal window -->
   <div style="display: none;" id="call" class="modal">

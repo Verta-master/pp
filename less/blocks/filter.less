@@ -42,7 +42,68 @@
     background-repeat: no-repeat;
     background-size: contain;
   }
+  &--close {
+    margin-bottom: 10px;
+    
+    &::after {
+      transform: rotate(180deg);
+    }
+  }
 }
 .filter__drop {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  top: 80px;
+  left: 15px;
+  right: 15px;
+  .transition();
+}
+.filter__drop--open {
+  opacity: 1;
+  z-index: 2000;
+  .transition();
+}
+.filter__wrap {
+  padding: 25px;
+  padding-top: 45px;
+  background: #FFFFFF;
+  border-radius: 20px;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background: rgba(20, 20, 21, 0.6);
+  backdrop-filter: blur(20px);
+  opacity: 0;
+  .transition();
+  
+  &--show {
+    opacity: 1;
+    z-index: 1000;
+    .transition();
+  }
+}
+.filter__subtitle {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.filter__block {
+  margin-bottom: 22px;
+}
+.filter__btn {
+  width: 100%;
+  margin-top: 45px;
+}
+.filter__cancel {
+  width: 100%;
+  margin-top: 20px;
   display: none;
 }
