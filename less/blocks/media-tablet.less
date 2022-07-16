@@ -11,6 +11,12 @@
   .blog__slide {
     width: 345px;
   }
+  .filter__title::before {
+    left: 25px;
+  }
+  .filter__title::after {
+    right: 26px;
+  }
 }
 @media (min-width: 700px) {
   .modal__wrap {
@@ -867,13 +873,14 @@
   }
   .top__wrap {
     min-height: 128px;
+    padding: 25px 30px;
     background-image: url(../img/images/bg-1tablet.png);
   }
   .top {
     margin-bottom: 30px;
   }
   .breadcrumbs {
-    margin-bottom: 26px;
+    margin-bottom: 24px;
   }
   .breadcrumbs__link {
     font-size: 13px;
@@ -891,23 +898,40 @@
     font-size: 16px;
   }
   .filter__title::after {
-    top: 36px;
+    top: 35px;
+    right: 30px;
   }
   .filter__title::before {
     top: 26px;
+    left: 30px;
+    width: 30px;
+    height: 30px;
+  }
+  .catalog__filterbtn {
+    margin-right: 15px;
+  }
+  .catalog__filter {
+    margin-bottom: 40px;
   }
   .catalog__about {
-    padding-top: 29px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-top: 32px;
     padding-bottom: 0;
     margin-bottom: 27px;
     border-bottom: 0;
     border-top: 1px solid #c5c9d5;
   }
+  .catalog__point:nth-child(2n+1),
+  .catalog__point:nth-child(2n) {
+    width: auto;
+  }
   .catalog__logo {
-    margin-bottom: 28px;
+    margin-bottom: 20px;
   }
   .catalog__point b {
     font-size: 17px;
+    margin-bottom: 10px;
   }
   .catalog__btns {
     padding-top: 0;
@@ -952,6 +976,10 @@
   .catalog__item {
     padding: 33px 40px;
     padding-bottom: 29px;
+    margin-bottom: 15px;
+  }
+  .info ul li {
+    margin-bottom: 0;
   }
   .faq,
   .info,
@@ -1008,7 +1036,7 @@
     margin-bottom: 10px;
   }
   .filter__wrap {
-    padding: 50px 30px;
+    padding: 45px 30px;
   }
   .filter__field,
   .filter__cancel {
@@ -1016,14 +1044,12 @@
   }
   .filter__field {
     justify-content: space-between;
-    margin-bottom: 50px;
     
     &--options {
-      margin-bottom: 60px;
+      margin-bottom: 46px;
     }
     &--btns {
-      margin-bottom: 0;
-      margin-top: 80px;
+      flex-direction: row-reverse;
     }
   }
   .filter__block,
@@ -1031,5 +1057,12 @@
   .filter__cancel {
     width: 48%;
     margin-top: 0;
+  }
+  .internal {
+    padding-top: 15px;
+  }
+  .filter__drop {
+    left: 45px;
+    right: 45px;
   }
 }
