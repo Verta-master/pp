@@ -563,10 +563,26 @@ h5 {
   text-decoration: none;
   border-radius: 12px;
   background: #E9EDFD;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.btn:hover,
+.btn:active {
+  color: #fff;
+  background: #2647E6;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
 }
 .btn--blue {
   color: #fff;
   background: #2647E6;
+}
+.btn--blue:hover,
+.btn--blue:active {
+  color: #2647E6;
+  background: #E9EDFD;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
 }
 .more-btn {
   width: 60px;
@@ -950,6 +966,14 @@ h5 {
 .calc--offer .calc__form {
   padding-top: 42px;
 }
+.calc--card {
+  margin-bottom: 10px;
+}
+.calc--card .calc__title {
+  text-align: left;
+  margin-left: 0;
+  margin-bottom: 30px;
+}
 .calc__form {
   margin-bottom: 10px;
   padding: 30px 25px;
@@ -996,6 +1020,13 @@ h5 {
   line-height: 23px;
   border: 1px solid #C5C9D5;
   border-radius: 12px;
+}
+.proposal--calc {
+  margin-bottom: 100px;
+}
+.proposal--calc .proposal__btn {
+  width: 100%;
+  margin-top: 25px;
 }
 .proposal__wrap {
   border-radius: 20px;
@@ -1169,6 +1200,21 @@ h5 {
 }
 .form {
   width: 100%;
+}
+.form--phone .form__field--tel .form__input {
+  padding-left: 50px;
+}
+.form--phone .form__field--tel::before {
+  content: "+7";
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #254BFF;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
 }
 .form__select,
 .form__input {
@@ -3492,6 +3538,63 @@ a.breadcrumbs__link:active {
   line-height: 28px;
   color: #141415;
 }
+.help {
+  margin-bottom: 100px;
+}
+.help__info {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+}
+.help__title {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+}
+.help__title span {
+  color: #254BFF;
+}
+.help__cloud {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 14px;
+  line-height: 23px;
+}
+.help__cloud span {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 20px 23px;
+  background: #FFFFFF;
+  border-radius: 30px 30px 30px 0px;
+}
+.help__cloud:first-child {
+  margin-top: 40px;
+}
+.help__cloud:last-child {
+  margin-bottom: 35px;
+}
+.help__img {
+  display: none;
+}
+.help__contact .social__link {
+  width: 47px;
+  height: 47px;
+  font-size: 0;
+}
+.help__contact .form__line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.help__contact .form__btn {
+  width: calc(100% - 67px);
+}
+.help__contact .form__field {
+  width: 100%;
+}
 @media (min-width: 360px) {
   .footer__block address {
     max-width: 240px;
@@ -4840,6 +4943,7 @@ a.breadcrumbs__link:active {
   .tariff__block {
     padding: 40px;
   }
+  .help,
   .calc--offer,
   .offer,
   .tariff {
@@ -4924,6 +5028,61 @@ a.breadcrumbs__link:active {
   }
   .connect {
     margin-bottom: 50px;
+  }
+  .calc--card .calc__title {
+    text-align: center;
+  }
+  .proposal--calc .proposal__btn {
+    display: none;
+  }
+  .proposal--calc {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .proposal--calc .proposal__wrap {
+    border-radius: 30px 30px 20px 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+  .help__wrap {
+    position: relative;
+  }
+  .help__info {
+    width: 450px;
+  }
+  .help__img {
+    display: block;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    z-index: -1;
+    width: 355px;
+  }
+  .help__img img:first-child {
+    display: none;
+  }
+  .help__contact .form__line {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .help__contact .form__line .form__field {
+    width: 49%;
+    margin-bottom: 35px;
+  }
+  .help__contact .form__line .form__input {
+    margin-bottom: 0;
+  }
+  .help__contact .form__btn {
+    width: 185px;
+    margin-left: auto;
+  }
+  .help__contact .social {
+    margin-right: auto;
+  }
+  .partner--calc {
+    margin-bottom: 130px;
+  }
+  .partner--calc .partner__item:nth-child(6) {
+    margin-right: 0;
   }
 }
 @media (min-width: 1200px) {
@@ -6461,6 +6620,97 @@ a.breadcrumbs__link:active {
     fill: #fff;
     -webkit-transition: ease-out 0.3s;
     transition: ease-out 0.3s;
+  }
+  .calc--card .calc__form {
+    max-width: 1064px;
+    margin-bottom: 20px;
+    padding: 40px;
+    padding-bottom: 36px;
+  }
+  .proposal--calc .proposal__wrap {
+    max-width: 1064px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .proposal--calc {
+    margin-bottom: 120px;
+  }
+  .help__info {
+    width: 50%;
+    max-width: 500px;
+  }
+  .help__img {
+    width: 50%;
+    position: static;
+  }
+  .help__img img:first-child {
+    display: block;
+  }
+  .help__img img:nth-child(2) {
+    display: none;
+  }
+  .help__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .help__contact .form__line {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .help__contact .form__line .form__input {
+    width: 100%;
+    border: 0;
+  }
+  .help__contact .form__line .form__field {
+    width: 25%;
+    margin-bottom: 0;
+  }
+  .help__contact .form__btn {
+    position: relative;
+    margin-left: 0;
+  }
+  .help__contact .form__btn::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 12px;
+  }
+  .help__contact .social {
+    margin-right: 0;
+    width: 25%;
+  }
+  .help__contact .social__link {
+    width: auto;
+    color: #254BFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 47px;
+    text-decoration: none;
+    padding-left: 60px;
+  }
+  .help__contact .social__item {
+    margin-right: 0;
+  }
+  .partner--calc .partner__list {
+    width: 100%;
+  }
+  .partner--calc .partner__item {
+    width: 32%;
+  }
+  .faq--top h2 {
+    display: block;
   }
 }
 @media (min-width: 1290px) {
