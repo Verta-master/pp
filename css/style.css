@@ -3272,6 +3272,9 @@ a.breadcrumbs__link:active {
 .tariff {
   margin-bottom: 100px;
 }
+.tariff--calc {
+  margin-bottom: 89px;
+}
 .tariff__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3546,6 +3549,9 @@ a.breadcrumbs__link:active {
   font-size: 15px;
   line-height: 24px;
 }
+.help__info p {
+  margin-top: 0;
+}
 .help__title {
   margin-bottom: 10px;
   font-weight: 600;
@@ -3568,14 +3574,17 @@ a.breadcrumbs__link:active {
   background: #FFFFFF;
   border-radius: 30px 30px 30px 0px;
 }
-.help__cloud:first-child {
+.help__cloud:first-of-type {
   margin-top: 40px;
 }
-.help__cloud:last-child {
+.help__cloud:last-of-type {
   margin-bottom: 35px;
 }
 .help__img {
   display: none;
+}
+.help__contact .social {
+  margin-top: 25px;
 }
 .help__contact .social__link {
   width: 47px;
@@ -3588,12 +3597,20 @@ a.breadcrumbs__link:active {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .help__contact .form__btn {
   width: calc(100% - 67px);
+  margin-top: 25px;
 }
 .help__contact .form__field {
   width: 100%;
+  margin-bottom: 10px;
+}
+.help__contact .form__field .form__input {
+  margin-bottom: 0;
 }
 @media (min-width: 360px) {
   .footer__block address {
@@ -4881,7 +4898,7 @@ a.breadcrumbs__link:active {
   }
   .tariff__title {
     min-height: 300px;
-    padding-right: 224px;
+    padding-right: 215px;
     margin-bottom: 20px;
     padding-left: 40px;
     display: -webkit-box;
@@ -5031,16 +5048,22 @@ a.breadcrumbs__link:active {
   }
   .calc--card .calc__title {
     text-align: center;
+    margin-bottom: 40px;
   }
   .proposal--calc .proposal__btn {
     display: none;
   }
   .proposal--calc {
+    margin-bottom: 90px;
     background-color: rgba(255, 255, 255, 0);
   }
   .proposal--calc .proposal__wrap {
+    padding-bottom: 10px;
     border-radius: 30px 30px 20px 20px;
     background-color: rgba(255, 255, 255, 0.6);
+  }
+  .help {
+    overflow: hidden;
   }
   .help__wrap {
     position: relative;
@@ -5051,8 +5074,8 @@ a.breadcrumbs__link:active {
   .help__img {
     display: block;
     position: absolute;
-    top: 80px;
-    right: 0;
+    top: 74px;
+    right: -46px;
     z-index: -1;
     width: 355px;
   }
@@ -5074,15 +5097,26 @@ a.breadcrumbs__link:active {
   .help__contact .form__btn {
     width: 185px;
     margin-left: auto;
+    margin-top: 0;
   }
   .help__contact .social {
     margin-right: auto;
+    margin-top: 0;
   }
   .partner--calc {
     margin-bottom: 130px;
   }
   .partner--calc .partner__item:nth-child(6) {
     margin-right: 0;
+  }
+  .tariff--calc {
+    margin-bottom: 80px;
+  }
+  .help__title {
+    margin-bottom: 17px;
+  }
+  .help__cloud {
+    max-width: 370px;
   }
 }
 @media (min-width: 1200px) {
@@ -6631,9 +6665,14 @@ a.breadcrumbs__link:active {
     max-width: 1064px;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 0;
   }
   .proposal--calc {
-    margin-bottom: 120px;
+    margin-bottom: 128px;
+  }
+  .help__title {
+    font-size: 26px;
+    line-height: 32px;
   }
   .help__info {
     width: 50%;
@@ -6657,6 +6696,12 @@ a.breadcrumbs__link:active {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  .help__cloud:first-of-type {
+    margin-top: 58px;
+  }
+  .help__cloud:last-of-type {
+    margin-bottom: 0;
+  }
   .help__contact .form__line {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
@@ -6669,7 +6714,7 @@ a.breadcrumbs__link:active {
     border: 0;
   }
   .help__contact .form__line .form__field {
-    width: 25%;
+    width: 23%;
     margin-bottom: 0;
   }
   .help__contact .form__btn {
@@ -6689,7 +6734,11 @@ a.breadcrumbs__link:active {
   }
   .help__contact .social {
     margin-right: 0;
-    width: 25%;
+    margin-left: 60px;
+    width: 30%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .help__contact .social__link {
     width: auto;
@@ -6705,12 +6754,22 @@ a.breadcrumbs__link:active {
   }
   .partner--calc .partner__list {
     width: 100%;
+    margin-top: 30px;
   }
   .partner--calc .partner__item {
     width: 32%;
   }
   .faq--top h2 {
     display: block;
+  }
+  .tariff--calc {
+    margin-bottom: 40px;
+  }
+  .calc--card .calc__title {
+    margin-bottom: 30px;
+  }
+  .help {
+    margin-bottom: 144px;
   }
 }
 @media (min-width: 1290px) {
