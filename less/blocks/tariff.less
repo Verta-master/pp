@@ -20,6 +20,9 @@
   }
 }
 .tariff__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 229px;
   margin-bottom: 10px;
   border-radius: 25px;
@@ -27,8 +30,11 @@
   
   img {
     display: block;
-    width: 100%;
-    height: auto;
+    flex: 0 0 auto;
+    height: 100%;
+    width: auto;
+    max-width: none;
+    border-radius: 25px;
   }
 }
 .tariff__btn {
