@@ -1218,6 +1218,7 @@
   .tariff__block {
     padding: 40px;
   }
+  .help,
   .calc--offer,
   .offer,
   .tariff {
@@ -1299,5 +1300,64 @@
   }
   .connect {
     margin-bottom: 50px;
+  }
+  .calc--card .calc__title {
+    text-align: center;
+  }
+  .proposal--calc .proposal__btn {
+    display: none;
+  }
+  .proposal--calc {
+    background-color: rgba(255,255,255,0);
+    
+    .proposal__wrap {
+      border-radius: 30px 30px 20px 20px;
+      background-color: rgba(255,255,255,0.6);
+    }
+  }
+  .help__wrap {
+    position: relative;
+  }
+  .help__info {
+    width: 450px;
+  }
+  .help__img {
+    display: block;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    z-index: -1;
+    width: 355px;
+    
+    img:first-child {
+      display: none;
+    }
+  }
+  .help__contact {
+    .form__line {
+      justify-content: space-between;
+      
+      .form__field {
+        width: 49%;
+        margin-bottom: 35px;
+      }
+      .form__input {
+        margin-bottom: 0;
+      }
+    }
+    .form__btn {
+      width: 185px;
+      margin-left: auto;
+    }
+    .social {
+      margin-right: auto;
+    }
+  }
+  .partner--calc {
+    margin-bottom: 130px;
+    
+    .partner__item:nth-child(6) {
+      margin-right: 0;
+    }
   }
 }

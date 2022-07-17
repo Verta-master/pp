@@ -1,5 +1,24 @@
 .form {
   width: 100%;
+  
+  &--phone {
+    .form__field--tel {
+      .form__input {
+        padding-left: 50px;
+      }
+      &::before {
+        content: "+7";
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
+        color: @blue;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+      }
+    }
+  }
 }
 .form__select,
 .form__input {

@@ -1444,6 +1444,99 @@ h1 {
     }
   }
 }
+.calc--card {
+  .calc__form {
+    max-width: 1064px;
+    margin-bottom: 20px;
+    padding: 40px;
+    padding-bottom: 36px;
+  }
+}
+.proposal--calc .proposal__wrap {
+  max-width: 1064px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.proposal--calc {
+  margin-bottom: 120px;
+}
+.help__info {
+  width: 50%;
+  max-width: 500px;
+}
+.help__img {
+  width: 50%;
+  position: static;
+  
+  img:first-child {
+    display: block;
+  }
+  img:nth-child(2) {
+    display: none;
+  }
+}
+.help__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.help__contact {
+  .form__line {
+    flex-wrap: nowrap;
+    align-items: center;
+    
+    .form__input {
+      width: 100%;
+      border: 0;
+    }
+  }
+  .form__line .form__field {
+    width: 25%;
+    margin-bottom: 0;
+  }
+  .form__btn {
+    position: relative;
+    margin-left: 0;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: -5px;
+      right: -5px;
+      bottom: -5px;
+      width: 300px;
+      background-color: #fff;
+      border-radius: 12px;
+    }
+  }
+  .social {
+    margin-right: 0;
+    width: 25%;
+  }
+  .social__link {
+    width: auto;
+    color: @blue;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 47px;
+    text-decoration: none;
+    padding-left: 60px;
+  }
+  .social__item {
+    margin-right: 0;
+  }
+}
+.partner--calc {
+  .partner__list {
+    width: 100%;
+  }
+  .partner__item {
+    width: 32%;
+  }
+}
+.faq--top h2 {
+  display: block;
+}
 }
 //---------------------------------------------
 @media (min-width: 1290px) {

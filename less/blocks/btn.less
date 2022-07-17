@@ -12,10 +12,25 @@
   text-decoration: none;
   border-radius: 12px;
   background: #E9EDFD;
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: #fff;
+    background: #2647E6;
+    .transition();
+  }
 }
 .btn--blue {
   color: #fff;
   background: #2647E6;
+  
+  &:hover,
+  &:active {
+    color: #2647E6;
+    background: @light;
+    .transition();
+  }
 }
 .more-btn {
   width: 60px;
