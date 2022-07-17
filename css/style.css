@@ -3405,6 +3405,12 @@ a.breadcrumbs__link:active {
 .tariff--calc {
   margin-bottom: 89px;
 }
+.tariff--company {
+  margin-bottom: 124px;
+}
+.tariff--company .tariff__btn {
+  width: 128px;
+}
 .tariff__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3677,11 +3683,16 @@ a.breadcrumbs__link:active {
 }
 .connect__block--review {
   height: 323px;
+  padding-top: 45px;
+  padding-left: 45px;
+  padding-bottom: 30px;
   background-image: url(../img/images/bg-5mobile.png);
   background-position: bottom center;
   background-size: 100% auto;
 }
 .connect__block--review .more-btn {
+  width: 69px;
+  height: 50px;
   background: #E9EDFD;
 }
 .connect__block--review .more-btn svg {
@@ -3712,6 +3723,9 @@ a.breadcrumbs__link:active {
   font-size: 20px;
   line-height: 28px;
   color: #141415;
+}
+.connect__desktop {
+  display: none;
 }
 .help {
   margin-bottom: 100px;
@@ -5646,6 +5660,27 @@ a.breadcrumbs__link:active {
     font-size: 15px;
     line-height: 24px;
     margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+  }
+  .tariff--company {
+    margin-bottom: 60px;
+  }
+  .benefits--company {
+    margin-bottom: 94px;
+  }
+  .bank {
+    margin-bottom: 124px;
+  }
+  .connect--company {
+    margin-bottom: 59px;
+  }
+  .connect--company .more-btn {
+    background: #e9edfd;
+  }
+  .connect--company .more-btn svg {
+    fill: #254BFF;
   }
 }
 @media (min-width: 1200px) {
@@ -7445,6 +7480,37 @@ a.breadcrumbs__link:active {
     background-image: url(../img/images/bg-5.png);
     background-size: auto;
     background-position: right bottom;
+  }
+  .tariff--company {
+    margin-bottom: 0;
+  }
+  .benefits--company {
+    margin-bottom: 90px;
+  }
+  .bank__subtitle {
+    max-width: 100%;
+  }
+  .bank__link {
+    height: 177px;
+  }
+  .bank__slider {
+    height: 435px;
+    padding-bottom: 50px;
+  }
+  .bank {
+    margin-bottom: 116px;
+  }
+  .connect__desktop {
+    display: block;
+  }
+  .connect__mobile {
+    display: none;
+  }
+  .connect__block--review {
+    padding-left: 30px;
+  }
+  .connect__block--review .connect__wrap {
+    max-width: 250px;
   }
 }
 @media (min-width: 1290px) {
