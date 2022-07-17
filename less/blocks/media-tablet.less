@@ -1321,11 +1321,12 @@
   .connect .wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   .connect__block {
     width: 49%;
     height: 323px;
-    margin-bottom: 0;
+    margin-bottom: 20px;
     padding: 45px;
     padding-bottom: 30px;
   }
@@ -1482,5 +1483,19 @@
   }
   .result__wrap {
     margin-bottom: 36px;
+  }
+  .bank__link {
+    height: 128px;
+  }
+  .bank__slider {
+    height: 315px;
+  }
+  .bank__slider .swiper-wrapper {
+    grid-template-rows: auto auto;
+  }
+  .bank__subtitle {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 40px;
   }
 }

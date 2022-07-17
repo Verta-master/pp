@@ -52,6 +52,9 @@
   padding: 30px 24px;
   padding-left: 90px;
   padding-right: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   font-weight: 600;
   font-size: 14px;
   line-height: 22px;
@@ -98,4 +101,14 @@
 }
 .tariff__column {
   margin-bottom: 50px;
+}
+.tariff__list--company {
+  .tariff__item{
+    &:first-child::before {
+      background-image: url(../img/icons/icon-10.png);
+    }
+    &:nth-child(2)::before {
+      background-image: url(../img/icons/users.png);
+    }
+  }
 }
