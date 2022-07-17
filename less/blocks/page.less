@@ -1,0 +1,50 @@
+.page {
+  h1 {
+    margin-bottom: 60px;
+    margin-top: 23px;
+  }
+}
+.page__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 25px;
+  margin-bottom: 40px;
+  background: #FFFFFF;
+  border-radius: 25px;
+}
+.page__link {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: @blue;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    width: 10px;
+    height: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &--prev {
+    padding-left: 25px;
+    
+    &::before {
+      left: 0;
+      background-image: url(../img/icons/arrow-back.svg);
+    }
+  }
+  &--next {
+    padding-right: 25px;
+    
+    &::before {
+      right: 0;
+      background-image: url(../img/icons/arrow-top-blue.svg);
+    }
+  }
+}

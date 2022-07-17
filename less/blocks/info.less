@@ -26,6 +26,31 @@
       }
     }
   }
+  &--page {
+    .info__block h2,
+    .info__block h3,
+    .info__block h4 {
+      padding-left: 0;
+    }
+    .info__block h2::before,
+    .info__block h3::before,
+    .info__block h4::before {
+      display: none;
+    }
+    .info__block {
+      padding-top: 30px;
+      padding-bottom: 60px;
+      
+      h2 {
+        font-size: 20px;
+        line-height: 26px;
+      }
+    }
+  }
+  .btn {
+    width: 167px;
+    margin-top: 40px;
+  }
 }
 .info__block {
   margin-bottom: 10px;
@@ -66,4 +91,12 @@
 }
 .info__title {
   display: none;
+}
+.info__img {
+  margin-top: 42px;
+  margin-bottom: 32px;
+  
+  img {
+    border-radius: 12px;
+  }
 }

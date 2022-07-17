@@ -1,0 +1,27 @@
+.date {
+  margin-bottom: 17px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.date__period {
+  position: relative;
+  padding-left: 22px;
+  margin-right: 20px;
+  color: #2647E6;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 16px;
+    background-image: url(../img/icons/fire-blue.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+.date__time {
+  color: #737581;
+}
