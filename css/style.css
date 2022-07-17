@@ -2088,17 +2088,17 @@ h5 {
   background-repeat: no-repeat;
   background-size: contain;
 }
-.blog__pagination {
+.swiper-pagination {
   bottom: 0 !important;
   margin: 0 5px !important;
 }
-.blog__pagination .swiper-pagination-bullet {
+.swiper-pagination .swiper-pagination-bullet {
   width: 44px;
   height: 5px;
   background: #a0a0a0;
   border-radius: 10px;
 }
-.blog__pagination .swiper-pagination-bullet-active {
+.swiper-pagination .swiper-pagination-bullet-active {
   background: #254BFF;
 }
 .blog__item--light .blog__link--spec {
@@ -2198,6 +2198,9 @@ h5 {
   line-height: 1.7;
   background: #313237;
   border-radius: 30px 30px 0px 0px;
+}
+.footer--top {
+  background-color: rgba(255, 255, 255, 0);
 }
 .footer__top {
   display: -webkit-box;
@@ -3461,6 +3464,16 @@ a.breadcrumbs__link:active {
   padding: 30px 24px;
   padding-left: 90px;
   padding-right: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-weight: 600;
   font-size: 14px;
   line-height: 22px;
@@ -3506,6 +3519,12 @@ a.breadcrumbs__link:active {
 }
 .tariff__column {
   margin-bottom: 50px;
+}
+.tariff__list--company .tariff__item:first-child::before {
+  background-image: url(../img/icons/icon-10.png);
+}
+.tariff__list--company .tariff__item:nth-child(2)::before {
+  background-image: url(../img/icons/users.png);
 }
 .offer {
   margin-bottom: 100px;
@@ -3655,6 +3674,18 @@ a.breadcrumbs__link:active {
   fill: #fff;
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
+}
+.connect__block--review {
+  height: 323px;
+  background-image: url(../img/images/bg-5mobile.png);
+  background-position: bottom center;
+  background-size: 100% auto;
+}
+.connect__block--review .more-btn {
+  background: #E9EDFD;
+}
+.connect__block--review .more-btn svg {
+  fill: #254BFF;
 }
 .connect__wrap {
   height: 100%;
@@ -3932,6 +3963,60 @@ a.breadcrumbs__link:active {
 .page__link--next::before {
   right: 0;
   background-image: url(../img/icons/arrow-top-blue.svg);
+}
+.bank {
+  margin-bottom: 100px;
+}
+.bank h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.bank__subtitle {
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+}
+.bank__slider {
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-bottom: 35px;
+  height: 365px;
+  position: relative;
+}
+.bank__slider .swiper-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  grid-auto-flow: column;
+}
+.bank__slider .swiper-wrapper > .swiper-slide {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.bank__slide {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.bank__link {
+  width: 100%;
+  height: 100px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFFFFF;
+  border-radius: 20px;
 }
 @media (min-width: 360px) {
   .footer__block address {
@@ -5384,11 +5469,13 @@ a.breadcrumbs__link:active {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .connect__block {
     width: 49%;
     height: 323px;
-    margin-bottom: 0;
+    margin-bottom: 20px;
     padding: 45px;
     padding-bottom: 30px;
   }
@@ -5545,6 +5632,20 @@ a.breadcrumbs__link:active {
   }
   .result__wrap {
     margin-bottom: 36px;
+  }
+  .bank__link {
+    height: 128px;
+  }
+  .bank__slider {
+    height: 315px;
+  }
+  .bank__slider .swiper-wrapper {
+    grid-template-rows: auto auto;
+  }
+  .bank__subtitle {
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 40px;
   }
 }
 @media (min-width: 1200px) {
@@ -7335,6 +7436,15 @@ a.breadcrumbs__link:active {
   }
   .result {
     margin-bottom: 110px;
+  }
+  .connect__block--info {
+    width: 32%;
+  }
+  .connect__block--review {
+    width: 66%;
+    background-image: url(../img/images/bg-5.png);
+    background-size: auto;
+    background-position: right bottom;
   }
 }
 @media (min-width: 1290px) {
