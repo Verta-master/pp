@@ -1139,29 +1139,11 @@ h1 {
 .faq {
   margin-bottom: 190px;
 }
-.nav__wrap,
-.nav {
-  display: flex;
-  align-items: center;
-}
-.nav {
-  justify-content: space-between;
-  margin-bottom: 25px;
-  border-bottom: 1px solid #C5C9D5;
-  
-  .more-arrow {
-    padding-bottom: 16px;
-  }
-}
 .nav__link {
-  display: block;
-  padding-bottom: 16px;
-  margin-right: 45px;
-  font-weight: 500;
   font-size: 15px;
   line-height: 18px;
-  color: #4B4C54;
-  text-decoration: none;
+  margin-right: 45px;
+  padding-bottom: 16px;
 }
 .more-arrow {
   font-size: 15px;
@@ -1542,7 +1524,7 @@ h1 {
 .partner--calc {
   .partner__list {
     width: 100%;
-    margin-top: 30px;
+    margin-top: 42px;
   }
   .partner__item {
     width: 32%;
@@ -1560,7 +1542,56 @@ h1 {
 .help {
   margin-bottom: 144px;
 }
-
+.nav__date {
+  position: relative;
+  display: block;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    width: 12px;
+    height: 6px;
+    background-image: url(../img/icons/select-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+.nav__date-input {
+  display: block;
+  width: 196px;
+  height: 50px;
+  padding: 0 25px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+  color: @blue;
+  border-radius: 12px;
+  background-color: rgba(38, 71, 230, 0.1);
+  
+  &::placeholder {
+    opacity: 1;
+  }
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0;
+}
+.nav__wrap {
+  width: ~"calc(100% - 220px)";
+  border-bottom: 1px solid #C5C9D5;
+}
+.blog__item {
+  width: 31.8%;
+  margin-right: 1.5%;
+}
+.blog__list {
+  margin-right: -20px;
+  justify-content: flex-start;
+}
 }
 //---------------------------------------------
 @media (min-width: 1290px) {

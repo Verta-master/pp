@@ -8,6 +8,11 @@
   padding-left: 15px;
   padding-bottom: 40px;
 }
+.blog__list {
+  .reset();
+  list-style: none;
+}
+.blog__item,
 .blog__slide {
   position: relative;
   box-sizing: border-box;
@@ -16,6 +21,10 @@
   background: #FFFFFF;
   border-radius: 16px;
   overflow: hidden;
+}
+.blog__item {
+  width: 100%;
+  margin-bottom: 20px;
 }
 .blog__link {
   display: flex;
@@ -153,4 +162,31 @@
   .swiper-pagination-bullet-active {
     background: #254BFF;
   }
+}
+.blog__item--light {
+  .blog__link--spec {
+    background-image: none;
+    background-color: #fff;
+    color: #141415;
+  }
+  .blog__link--spec .blog__time {
+    color: @blue;
+    
+    &::before {
+      background-image: url(../img/icons/fire-blue.svg);
+    }
+  }
+  .blog__label {
+    background-color: #C9F28D;
+  }
+  .blog__link--spec .blog__info .more-btn {
+    background-color: @blue;
+    
+    svg {
+      fill: #fff;
+    }
+  }
+}
+.blog__item .blog__link {
+  min-height: 453px;
 }

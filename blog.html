@@ -208,236 +208,198 @@
     <nav class="breadcrumbs">
       <div class="wrapper">
         <a href="#" class="breadcrumbs__link">Главная</a>
-        <a href="#" class="breadcrumbs__link">Банки</a>
-        <span class="breadcrumbs__link">АО КИВИ банк</span>
+        <span class="breadcrumbs__link">Блог</span>
       </div>
     </nav>
     
-    <section class="card">
+    <section class="blog">
       <div class="wrapper">
-        <nav class="nav nav--card">
+        <h1>Блог</h1>
+        
+        <nav class="nav nav--blog">
           <div class="nav__wrap">
-            <a href="#" class="nav__link">Требования к клиену</a>
-            <a href="#" class="nav__link">Информация о банке</a>
-            <a href="#" class="nav__link">Частые ыопросы/FAQ</a>
+            <a href="#" class="nav__link nav__link--active">Все публикации</a>
+            <a href="#" class="nav__link">Новости</a>
+            <a href="#" class="nav__link">Блог</a>
+            <a href="#" class="nav__link">Спецпредложения</a>
           </div>
-          <a href="#" class="more-arrow">
-            <span>Калькулятор гарантии</span>
-            <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10.5 1.75H11.5C11.5 1.19772 11.0523 0.75 10.5 0.75V1.75ZM1.70711 11.9571L11.2071 2.45711L9.79289 1.04289L0.292893 10.5429L1.70711 11.9571ZM9.5 1.75V11.25H11.5V1.75H9.5ZM10.5 0.75H1V2.75H10.5V0.75Z"/>
-            </svg>
-          </a>
+          <div class="nav__date">
+            <input type="text" id="datepicker" class="nav__date-input" placeholder="Выбрать дату">
+          </div>
         </nav>
         
-        <div class="card__wrap">
-          <div class="card__title">
-            <picture class="card__img">
-              <source media="(min-width: 1100px)" srcset="img/images/card.jpg">
-              <source media="(min-width: 480px)" srcset="img/images/card-tablet.jpg">
-              <img src="img/images/card-mobile.jpg" srcset="img/images/card-mobile.jpg" alt="КИВИ банк">
-            </picture>
-            <h1>АО «КИВИ банк» Независимая гарантия на участие</h1>
-          </div>
-          <div class="card__info">
-            <select class="form__select">
-              <option value="" selected disabled>Гарантия на участие</option>
-              <option value="1">Гарантия 1</option>
-              <option value="2">Гарантия 2</option>
-              <option value="3">Гарантия 3</option>
-            </select>
-            <p class="card__subtitle">Тип контракта:</p>
-            <p class="card__label">44-ФЗ,  223-ФЗ,  185-ФЗ/615ПП,  коммерческий контракт</p>
-            <div class="card__table card__table--top">
-              <table>
-                <tr>
-                  <td><span>Сумма:</span><em></em></td>
-                  <td>100 млн. ₽</td>
-                </tr>
-                <tr>
-                  <td><span>Срок:</span><em></em></td>
-                  <td>2 127 дней</td>
-                </tr>
-                <tr>
-                  <td><span>Ставка:</span><em></em></td>
-                  <td>1,01 %</td>
-                </tr>
-                <tr>
-                  <td><span>Комиссия банка:</span><em></em></td>
-                  <td>1 499 ₽</td>
-                </tr>
-              </table>
-            </div>
-            <a href="#" class="btn btn--blue card__btn">Оформить заявку</a>
-          </div>
-        </div>
-        
-        <div class="card__block">
-          <div class="card__column">
-            <p class="card__details details"><span>Требования к клиенту<i>Какая то очень важная информация - может быть и в несколько строк</i></span></p>
-            <div class="table card__table">
-              <table>
-                <tr>
-                  <td><span>Залог</span><em></em></td>
-                  <td>нет</td>
-                </tr>
-                <tr>
-                  <td><span>Поручительство</span><em></em></td>
-                  <td>нет</td>
-                </tr>
-                <tr>
-                  <td><span>Открытие счета</span><em></em></td>
-                  <td>не требуется</td>
-                </tr>
-                <tr>
-                  <td><span>Возраст компании</span><em></em></td>
-                  <td>от 3 месяцев</td>
-                </tr>
-              </table>
-            </div>
-            <div class="card__table">
-              <table>
-                <tr>
-                  <td><span>Возможность получения онлайн</span><em></em></td>
-                  <td>да</td>
-                </tr>
-                <tr>
-                  <td><span>Регион</span><em></em></td>
-                  <td>РФ</td>
-                </tr>
-              </table>
-            </div>
-          </div>
-          <div class="card__column">
-            <div class="card__table">
-              <p class="card__details">Все услуги банка</p>
-              <table>
-                <tr>
-                  <td><span>Гарантия на участие</span><em></em></td>
-                  <td>да</td>
-                </tr>
-                <tr>
-                  <td><span>Гарантия на исполнение контракта</span><em></em></td>
-                  <td>да</td>
-                </tr>
-                <tr>
-                  <td><span>Гарантия на возврат аванса</span><em></em></td>
-                  <td>нет</td>
-                </tr>
-                <tr>
-                  <td><span>Гарантия на гарантийный период</span><em></em></td>
-                  <td>да</td>
-                </tr>
-                <tr>
-                  <td><span>Тендерный займ</span><em></em></td>
-                  <td>да</td>
-                </tr>
-                <tr>
-                  <td><span>Кредит на исполнение контракта</span><em></em></td>
-                  <td>да</td>
-                </tr>
-                <tr>
-                  <td><span>Тендерное сопровождение</span><em></em></td>
-                  <td>да</td>
-                </tr>
-                <tr>
-                  <td><span>Гарантийные обязательства</span><em></em></td>
-                  <td>нет</td>
-                </tr>
-              </table>
-            </div>
-          </div>
-        </div>
-        
-        <div class="card__parameters">
-          <h2>Показатели банка</h2>
-          <ul class="card__list">
-            <li>Место по активам — <span>2</span></li>
-            <li>Под контролем органов ЦБ и РФ — <span>да</span></li>
-            <li>Соответствует требованиям 44-ФЗ —  <span>да</span></li>
-            <li>Рейтинг АКРА  —<span></span></li>
-            <li>Системнозначимый —<span>да</span></li>
-            <li>Для открытия спецсчетов — <span>да</span></li>
-            <li>Рейтинг Эксперт РА —  <span>ruAAA</span></li>
-            <li>Страхование вкладов  — <span>да</span></li>
-            <li>Уполномочен работать с ВПК РФ  — <span>да</span></li>
-          </ul>
-          <div class="attention"><b>Подходит под требования госкорпораций:</b>Транснефть, Росатом, Ростелеком, Ростех, Аэрофлот, РЖД</div>
-        </div>
-      </div>
-    </section>
-    
-    <section class="info">
-      <div class="wrapper">
-        <div class="wrapper__columns">
-          <aside class="sidebar">
-            <nav class="sidebar__links">
-              <div class="sidebar__wrap">
-                <a href="#tender" class="sidebar__link sidebar__link--active">Тендерный займ</a>
-                <a href="#info" class="sidebar__link">Общая информация</a>
-                <a href="#warranty" class="sidebar__link">Как получить гарантию</a>
+        <ul class="blog__list">
+          <div class="blog__item">
+            <a href="#" class="blog__link">
+              <figure class="blog__img">
+                <img src="img/images/img-4.jpg" alt="Новости" width="383" height="209">
+              </figure>
+              <div class="blog__info">
+                <span class="blog__label">Новости</span>
+                <time datetime="2022-05-12">12.05.22</time>
+                <h4>Банк Тинькофф в мае начисляет повышенные бонусные баллы программы лояльности в категории «Железнодорожные билеты»</h4>
+                <div class="blog__bottom">
+                  <div class="more-btn">
+                    <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.5 1.75H11.5C11.5 1.19772 11.0523 0.75 10.5 0.75V1.75ZM1.70711 11.9571L11.2071 2.45711L9.79289 1.04289L0.292893 10.5429L1.70711 11.9571ZM9.5 1.75V11.25H11.5V1.75H9.5ZM10.5 0.75H1V2.75H10.5V0.75Z"/>
+                    </svg>
+                  </div>
+                  <span class="blog__time">3 мин.</span>
+                </div>
               </div>
-            </nav>
-          </aside>
-          
-          <div class="wrapper__content">
-            <div class="info__block" id="info">
-              <h2>Общая информация</h2>
-              <p>Идейные соображения высшего порядка, а также граница обучения кадров напрямую зависит от поставленных обществом задач. Таким образом, начало повседневной работы по формированию позиции не даёт нам иного выбора, кроме определения кластеризации усилий. Сложно сказать, почему реплицированные с зарубежных источников.</p>
-              <h3>Идейные соображения высшего порядка</h3>
-              <p>По формированию позиции не даёт нам иного выбора, кроме определения кластеризации усилий. Сложно сказать, почему реплицированные с зарубежных источников, современные исследования призывают нас к новым свершениям, которые, в свою очередь, должны быть объявлены нарушающими общечеловеческие нормы этики и морали.</p>
-              <h4>Идейные соображения высшего </h4>
-              <ul>
-                <li>Идейные соображения высшего порядка</li>
-                <li>Идейные соображения</li>
-                <li>По формированию позиции не</li>
-                <li>Идейные соображения высшего порядка</li>
-                <li>Идейные соображения высшего</li>
-                <li>Идейные соображения высшего порядка</li>
-                <li>Идейные соображения высшего</li>
-              </ul>
-            </div>
-            
-            <div class="info__block" id="warranty">
-              <h2>Как получить гарантию</h2>
-              <p>Идейные соображения высшего порядка, а также граница обучения кадров напрямую зависит от поставленных обществом задач. Таким образом, начало повседневной работы по формированию позиции не даёт нам иного выбора, кроме определения кластеризации усилий. Сложно сказать, почему реплицированные с зарубежных источников, современные исследования призывают нас к новым свершениям, которые.</p>
-            </div>
+            </a>
           </div>
-        </div>
-      </div>
-    </section>
-    
-    <section class="faq faq--top">
-      <div class="wrapper">
-        <h2>Частые вопросы</h2>
-        <ul class="faq__list">
-          <li class="faq__item">
-            <p class="faq__title">Какие документы нужны для получения НГ по 44-ФЗ на исполнение контракта?</p>
-            <div class="faq__dropdown"><p>Какой то важный вопрос в одну строку. Какой то важный вопрос в одну строку. Какой то важный вопрос в одну строку</p></div>
-          </li>
-          <li class="faq__item">
-            <p class="faq__title">Что такое госконтракт и для чего обеспечивать его исполнение?</p>
-            <div class="faq__dropdown"><p>Какой то важный вопрос в несколько строк. Какой то важный вопрос в несколько строк. Какой то важный вопрос в несколько строк. Какой то важный вопрос в несколько строк. Какой то важный вопрос в несколько строк</p></div>
-          </li>
-          <li class="faq__item">
-            <p class="faq__title">Какие документы нужны для получения НГ по 44-ФЗ на исполнение контракта?</p>
-            <div class="faq__dropdown"><p>Какой то важный вопрос в одну строку. Какой то важный вопрос в одну строку. Какой то важный вопрос в одну строку</p></div>
-          </li>
-          <li class="faq__item">
-            <p class="faq__title">Каковы сроки получения независимой гарантии?</p>
-            <div class="faq__dropdown"><p>Какой то важный вопрос в несколько строк. Какой то важный вопрос в несколько строк. Какой то важный вопрос в несколько строк. Какой то важный вопрос в несколько строк. Какой то важный вопрос в несколько строк</p></div>
-          </li>
-          <li class="faq__item">
-            <p class="faq__title">Почему не стоит обращаться за получением НГ в банк напрямую?</p>
-            <div class="faq__dropdown"><p>Какой то важный вопрос в одну строку. Какой то важный вопрос в одну строку. Какой то важный вопрос в одну строку</p></div>
-          </li>
-          <li class="faq__item">
-            <p class="faq__title">Какой то важный вопрос в несколько строк</p>
-            <div class="faq__dropdown"><p>Какой то важный вопрос в несколько строк. Какой то важный вопрос в несколько строк. Какой то важный вопрос в несколько строк. Какой то важный вопрос в несколько строк. Какой то важный вопрос в несколько строк</p></div>
-          </li>
-          <li class="faq__item">
-            <p class="faq__title">Какой то важный вопрос в одну строку</p>
-            <div class="faq__dropdown"><p>Какой то важный вопрос в одну строку. Какой то важный вопрос в одну строку. Какой то важный вопрос в одну строку</p></div>
-          </li>
+          <div class="blog__item">
+            <a href="#" class="blog__link blog__link--spec">
+              <div class="blog__info">
+                <span class="blog__label">Спецпредложение</span>
+                <time datetime="2022-05-12">12.05.22</time>
+                <h4>Банк Тинькофф в мае начисляет повышенные бонусные баллы программы лояльности в категории Банк Тинькофф в мае начисляет повышенные бонусные баллы программы лояльности в категории</h4>
+                <div class="blog__bottom">
+                  <div class="more-btn">
+                    <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.5 1.75H11.5C11.5 1.19772 11.0523 0.75 10.5 0.75V1.75ZM1.70711 11.9571L11.2071 2.45711L9.79289 1.04289L0.292893 10.5429L1.70711 11.9571ZM9.5 1.75V11.25H11.5V1.75H9.5ZM10.5 0.75H1V2.75H10.5V0.75Z"/>
+                    </svg>
+                  </div>
+                  <span class="blog__time">3 мин.</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="blog__item">
+            <a href="#" class="blog__link">
+              <figure class="blog__img">
+                <img src="img/images/img-5.jpg" alt="Блог" width="383" height="209">
+              </figure>
+              <div class="blog__info">
+              <span class="blog__label">Новости</span>
+                <time datetime="2022-05-12">12.05.22</time>
+                <h4>Банк Тинькофф в мае начисляет повышенные бонусные баллы программы лояльности в категории «Железнодорожные билеты»</h4>
+                <div class="blog__bottom">
+                  <div class="more-btn">
+                    <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.5 1.75H11.5C11.5 1.19772 11.0523 0.75 10.5 0.75V1.75ZM1.70711 11.9571L11.2071 2.45711L9.79289 1.04289L0.292893 10.5429L1.70711 11.9571ZM9.5 1.75V11.25H11.5V1.75H9.5ZM10.5 0.75H1V2.75H10.5V0.75Z"/>
+                    </svg>
+                  </div>
+                  <span class="blog__time">3 мин.</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="blog__item blog__item--light">
+            <a href="#" class="blog__link blog__link--spec">
+              <div class="blog__info">
+                <span class="blog__label">Спецпредложение</span>
+                <time datetime="2022-05-12">12.05.22</time>
+                <h4>Банк Тинькофф в мае начисляет повышенные бонусные баллы программы лояльности в категории Банк Тинькофф в мае начисляет повышенные бонусные баллы программы лояльности в категории</h4>
+                <div class="blog__bottom">
+                  <div class="more-btn">
+                    <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.5 1.75H11.5C11.5 1.19772 11.0523 0.75 10.5 0.75V1.75ZM1.70711 11.9571L11.2071 2.45711L9.79289 1.04289L0.292893 10.5429L1.70711 11.9571ZM9.5 1.75V11.25H11.5V1.75H9.5ZM10.5 0.75H1V2.75H10.5V0.75Z"/>
+                    </svg>
+                  </div>
+                  <span class="blog__time">3 мин.</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="blog__item">
+            <a href="#" class="blog__link">
+              <figure class="blog__img">
+                <img src="img/images/img-4.jpg" alt="Новости" width="383" height="209">
+              </figure>
+              <div class="blog__info">
+                <span class="blog__label">Новости</span>
+                <time datetime="2022-05-12">12.05.22</time>
+                <h4>Банк Тинькофф в мае начисляет повышенные бонусные баллы программы лояльности в категории «Железнодорожные билеты»</h4>
+                <div class="blog__bottom">
+                  <div class="more-btn">
+                    <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.5 1.75H11.5C11.5 1.19772 11.0523 0.75 10.5 0.75V1.75ZM1.70711 11.9571L11.2071 2.45711L9.79289 1.04289L0.292893 10.5429L1.70711 11.9571ZM9.5 1.75V11.25H11.5V1.75H9.5ZM10.5 0.75H1V2.75H10.5V0.75Z"/>
+                    </svg>
+                  </div>
+                  <span class="blog__time">3 мин.</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="blog__item">
+            <a href="#" class="blog__link">
+              <figure class="blog__img">
+                <img src="img/images/img-9.jpg" alt="Новости" width="383" height="209">
+              </figure>
+              <div class="blog__info">
+                <span class="blog__label">Новости</span>
+                <time datetime="2022-05-12">12.05.22</time>
+                <h4>Банк Тинькофф в мае начисляет повышенные бонусные баллы программы лояльности в категории «Железнодорожные билеты»</h4>
+                <div class="blog__bottom">
+                  <div class="more-btn">
+                    <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.5 1.75H11.5C11.5 1.19772 11.0523 0.75 10.5 0.75V1.75ZM1.70711 11.9571L11.2071 2.45711L9.79289 1.04289L0.292893 10.5429L1.70711 11.9571ZM9.5 1.75V11.25H11.5V1.75H9.5ZM10.5 0.75H1V2.75H10.5V0.75Z"/>
+                    </svg>
+                  </div>
+                  <span class="blog__time">3 мин.</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="blog__item">
+            <a href="#" class="blog__link blog__link--spec">
+              <div class="blog__info">
+                <span class="blog__label">Спецпредложение</span>
+                <time datetime="2022-05-12">12.05.22</time>
+                <h4>Банк Тинькофф в мае начисляет повышенные бонусные баллы программы лояльности в категории Банк Тинькофф в мае начисляет повышенные бонусные баллы программы лояльности в категории</h4>
+                <div class="blog__bottom">
+                  <div class="more-btn">
+                    <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.5 1.75H11.5C11.5 1.19772 11.0523 0.75 10.5 0.75V1.75ZM1.70711 11.9571L11.2071 2.45711L9.79289 1.04289L0.292893 10.5429L1.70711 11.9571ZM9.5 1.75V11.25H11.5V1.75H9.5ZM10.5 0.75H1V2.75H10.5V0.75Z"/>
+                    </svg>
+                  </div>
+                  <span class="blog__time">3 мин.</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="blog__item">
+            <a href="#" class="blog__link">
+              <figure class="blog__img">
+                <img src="img/images/img-5.jpg" alt="Блог" width="383" height="209">
+              </figure>
+              <div class="blog__info">
+              <span class="blog__label">Новости</span>
+                <time datetime="2022-05-12">12.05.22</time>
+                <h4>Банк Тинькофф в мае начисляет повышенные бонусные баллы программы лояльности в категории «Железнодорожные билеты»</h4>
+                <div class="blog__bottom">
+                  <div class="more-btn">
+                    <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.5 1.75H11.5C11.5 1.19772 11.0523 0.75 10.5 0.75V1.75ZM1.70711 11.9571L11.2071 2.45711L9.79289 1.04289L0.292893 10.5429L1.70711 11.9571ZM9.5 1.75V11.25H11.5V1.75H9.5ZM10.5 0.75H1V2.75H10.5V0.75Z"/>
+                    </svg>
+                  </div>
+                  <span class="blog__time">3 мин.</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="blog__item">
+            <a href="#" class="blog__link">
+              <figure class="blog__img">
+                <img src="img/images/img-4.jpg" alt="Новости" width="383" height="209">
+              </figure>
+              <div class="blog__info">
+                <span class="blog__label">Новости</span>
+                <time datetime="2022-05-12">12.05.22</time>
+                <h4>Банк Тинькофф в мае начисляет повышенные бонусные баллы программы лояльности в категории «Железнодорожные билеты»</h4>
+                <div class="blog__bottom">
+                  <div class="more-btn">
+                    <svg width="12" height="12" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10.5 1.75H11.5C11.5 1.19772 11.0523 0.75 10.5 0.75V1.75ZM1.70711 11.9571L11.2071 2.45711L9.79289 1.04289L0.292893 10.5429L1.70711 11.9571ZM9.5 1.75V11.25H11.5V1.75H9.5ZM10.5 0.75H1V2.75H10.5V0.75Z"/>
+                    </svg>
+                  </div>
+                  <span class="blog__time">3 мин.</span>
+                </div>
+              </div>
+            </a>
+          </div>
         </ul>
       </div>
     </section>
@@ -574,14 +536,11 @@
   <script src="js/script.js"></script>
   
   <script>
-    $('.sidebar__wrap').niceScroll({
+    $('.nav').niceScroll({
       cursorcolor: '#2647E6',
     });
     
-    $('.faq__title').click(function() {
-      $(this).toggleClass('faq__title--open');
-      $(this).next().slideToggle();
-    })
+    $( "#datepicker" ).datepicker();
   </script>
 </body>
 </html>
