@@ -1576,11 +1576,16 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 0;
-}
-.nav__wrap {
-  width: ~"calc(100% - 220px)";
-  border-bottom: 1px solid #C5C9D5;
+  overflow-x: auto;
+  
+  &--blog {
+    border-bottom: 0;
+    
+    .nav__wrap {
+      width: ~"calc(100% - 220px)";
+      border-bottom: 1px solid #C5C9D5;
+    }
+  }
 }
 .blog__item {
   width: 31.8%;
@@ -1725,7 +1730,7 @@ h1 {
   padding-left: 30px;
   
   .connect__wrap {
-    max-width: 250px;
+    max-width: 230px;
   }
 }
 }
