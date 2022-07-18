@@ -1737,6 +1737,7 @@ h1 {
 }
 .bid {
   margin-top: 0;
+  margin-bottom: 0;
 }
 .bid__wrap {
   display: flex;
@@ -1750,14 +1751,24 @@ h1 {
   width: 49%;
 }
 .bid__title {
+  padding-top: 20px;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
+  
+  h2 {
+    font-size: 26px;
+    line-height: 32px;
+  }
 }
 .bid__name {
   font-weight: 600;
   font-size: 16px;
   line-height: 26px;
+}
+.bid__list {
+  padding-top: 64px;
+  padding-bottom: 45px;
 }
 .bid__item {
   font-weight: 500;
@@ -1765,6 +1776,13 @@ h1 {
   line-height: 26px;
   max-width: 438px;
   padding-right: 50px;
+  
+  &::before {
+    top: 20px;
+  }
+}
+.bid__item:not(:last-child) {
+  padding-bottom: 21px;
 }
 .news__wrap {
   flex-direction: row;
@@ -1782,6 +1800,7 @@ h1 {
 }
 .news__info {
   padding: 0;
+  padding-top: 20px;
 }
 .steps__list--contract {
   max-width: 631px;
@@ -1832,6 +1851,10 @@ h1 {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.credit__slider {
+  padding-bottom: 0;
+  margin-bottom: 14px;
+}
 .credit__slide {
   width: 49%;
   margin-bottom: 20px;
@@ -1844,6 +1867,8 @@ h1 {
 .credit__btn {
   width: 203px;
   opacity: 0;
+  position: relative;
+  top: 10px;
 }
 .credit__reg {
   font-size: 18px;
@@ -1875,6 +1900,21 @@ h1 {
   background: #FFFFFF;
   border-radius: 12px;
 }
+.tariff--warranty {
+  padding-top: 22px;
+  margin-bottom: 90px;
+  
+  .nav__link {
+    margin-right: 20px;
+  }
+  .tariff__btns {
+    margin-top: auto;
+  }
+}
+.credit__card {
+  padding-left: 35px;
+  padding-bottom: 40px;
+}
 }
 //---------------------------------------------
 @media (min-width: 1290px) {
@@ -1887,5 +1927,8 @@ h1 {
   }
   .catalog__about {
     width: 540px;
+  }
+  .tariff--warranty .nav__link {
+    margin-right: 45px;
   }
 }

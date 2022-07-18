@@ -8,16 +8,19 @@
   
   &--contract {
     padding-left: 42px;
+    margin-top: 30px;
     
     .steps__item {
-      padding: 20px 74px 20px 25px;
+      padding: 20px 55px 20px 25px;
       margin-top: 10px;
+      margin-bottom: 0;
       
       &::before {
         left: -42px;
       }
       &::after {
         left: -30px;
+        bottom: 0;
       }
     }
     .steps__item:last-child {
@@ -30,7 +33,8 @@
 .steps__item {
   position: relative;
   margin-top: 32px;
-  padding-left: 47px;
+  margin-bottom: 44px;
+  padding-left: 40px;
   font-weight: 500;
   font-size: 14px;
   line-height: 23px;
@@ -42,7 +46,7 @@
     content: counter(myCounter);
     position: absolute;
     top: 0;
-    left: 0;
+    left: -7px;
     width: 26px;
     height: 26px;
     font-weight: 500;
@@ -57,10 +61,13 @@
     content: "";
     position: absolute;
     top: 36px;
-    bottom: 0;
-    left: 13px;
+    bottom: -22px;
+    left: 7px;
     width: 1px;
     background-color: #141415;
+  }
+  &:last-child {
+    margin-bottom: 18px;
   }
   &:last-child::after {
     display: none;

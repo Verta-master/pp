@@ -1536,9 +1536,11 @@
     top: 23px;
     right: 23px;
   }
-  .credit__info,
-  .credit__btn {
+  .credit__info {
     width: 50%;
+  }
+  .credit__btn {
+    width: 44%;
   }
   .benefits--warranty {
     h2 {
@@ -1552,16 +1554,47 @@
   .news__img {
     height: 300px;
     border-radius: 25px;
+    margin-bottom: 20px;
+  }
+  .news__info {
+    padding-left: 36px;
+    padding-right: 52px;
+    padding-bottom: 40px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .news {
+    margin-bottom: 128px;
+  }
+  .news__info .more-arrow {
+    margin-top: 37px;
+  }
+  .bid {
+    margin-top: 80px;
   }
   .bid__comment {
+    font-size: 16px;
+    line-height: 24px;
     background-color: rgba(255,255,255,0);
   }
   .bid__list {
     padding-left: 38px;
     padding-right: 70px;
+    padding-bottom: 54px;
   }
   .bid__item {
     padding-right: 120px;
+    padding-left: 56px;
+    
+    &::before {
+      top: -3px;
+    }
+  }
+  .tariff--warranty {
+    margin-bottom: 108px;
+  }
+  .bid__comment::before {
+    top: 16px;
   }
   .bid__title {
     max-width: 470px;
@@ -1585,5 +1618,67 @@
   }
   .credit__reg {
     margin-bottom: 0;
+  }
+  .tariff--warranty {
+    .tariff__btns {
+      margin-top: 50px;
+    }
+  }
+  .steps h2 {
+    max-width: 500px;
+  }
+  .steps__list--contract {
+    margin-top: 40px;
+    max-width: 626px;
+    padding-left: 57px;
+    
+    .steps__item {
+      padding-left: 37px;
+      padding-top: 30px;
+      padding-bottom: 32px;
+      margin-top: 18px;
+      padding-right: 130px;
+    }
+  }
+  .steps__item {
+    font-size: 15px;
+    line-height: 24px;
+    padding-left: 58px;
+    
+    &::before {
+      left: -2px;
+    }
+    &::after {
+      left: 12px;
+    }
+  }
+  .steps__title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .steps__list--contract .steps__item::before {
+    left: -58px;
+  }
+  .steps__list--contract .steps__item::after {
+    left: -46px;
+  }
+  .info--warranty {
+    margin-bottom: 113px;
+  }
+  .steps {
+    margin-bottom: 126px;
+  }
+  .credit {
+    margin-bottom: 120px;
+    
+    h2 {
+      max-width: 540px;
+    }
+  }
+  .credit__subtitle {
+    margin-bottom: 40px;
+  }
+  .credit__card {
+    padding-bottom: 27px;
   }
 }
