@@ -1582,10 +1582,12 @@ h1 {
     border-bottom: 0;
     
     .nav__wrap {
-      width: ~"calc(100% - 220px)";
       border-bottom: 1px solid #C5C9D5;
     }
   }
+}
+.nav__wrap {
+  width: ~"calc(100% - 220px)";
 }
 .blog__item {
   width: 31.8%;
@@ -1732,6 +1734,146 @@ h1 {
   .connect__wrap {
     max-width: 230px;
   }
+}
+.bid {
+  margin-top: 0;
+}
+.bid__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.news__img,
+.news__info,
+.bid__block,
+.bid__title {
+  width: 49%;
+}
+.bid__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.bid__name {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+}
+.bid__item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  max-width: 438px;
+  padding-right: 50px;
+}
+.news__wrap {
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  padding-top: 24px;
+  padding-left: 40px;
+  min-height: 356px;
+  background: #FFFFFF;
+  border-radius: 30px;
+}
+.news__img {
+  height: 100%;
+  margin-bottom: 0;
+}
+.news__info {
+  padding: 0;
+}
+.steps__list--contract {
+  max-width: 631px;
+}
+.steps h2 {
+  max-width: 550px;
+  margin-bottom: 40px;
+}
+.steps__item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.steps__title {
+  font-size: 20px;
+  line-height: 26px;
+}
+.steps__list--info {
+  .steps__item {
+    padding-left: 0;
+    
+    &::before {
+      left: -50px;
+    }
+    &::after {
+      left: -37px;
+    }
+  }
+}
+.credit {
+  h2 {
+    max-width: 690px;
+    margin-bottom: 20px;
+  }
+}
+.credit__subtitle {
+  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 24px;
+}
+.credit__btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.credit__slider .swiper-wrapper {
+  overflow: hidden;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.credit__slide {
+  width: 49%;
+  margin-bottom: 20px;
+}
+.credit__text {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 24px;
+}
+.credit__btn {
+  width: 203px;
+  opacity: 0;
+}
+.credit__reg {
+  font-size: 18px;
+  line-height: 1.7;
+}
+.credit__info {
+  width: 60%;
+}
+.credit__card {
+  &:hover {
+    .credit__btn {
+      opacity: 1;
+      .transition();
+    }
+  }
+}
+.credit__more {
+  width: 203px;
+}
+.credit__number {
+  width: 65px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+  font-size: 14px;
+  line-height: 17px;
+  background: #FFFFFF;
+  border-radius: 12px;
 }
 }
 //---------------------------------------------
