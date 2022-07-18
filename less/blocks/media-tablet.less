@@ -1681,4 +1681,103 @@
   .credit__card {
     padding-bottom: 27px;
   }
+  .order__title,
+  .docs__maintitle,
+  .rules__title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .rules__item::after {
+    display: none;
+  }
+  .rules__item {
+    padding: 34px 107px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 25px;
+    
+    &::before {
+      top: 35px;
+      left: 30px;
+      width: 47px;
+      height: 47px;
+      color: #fff;
+      font-size: 24px;
+      line-height: 47px;
+      border: 0;
+      background-color: @blue;
+    }
+    &:last-child {
+      color: #fff;
+      background-color: #516EF2;
+      background-image: linear-gradient(98.35deg, #516EF2 0%, #1F40E4 101.45%);
+      
+      &::before {
+        background-image: url(../img/icons/tick.svg);
+        border: 1px solid #fff;
+        background-size: 18px 13px;
+        background-color: rgba(255,255,255,0);
+      }
+    }
+  }
+  .rules__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .docs__wrap {
+    padding: 45px 57px;
+  }
+  .docs__list {
+    margin-top: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .docs__item {
+    width: 49%;
+    margin-bottom: 22px;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: left;
+    
+    &--active {
+      display: block;
+      
+      a {
+        pointer-events: none;
+        color: #737581;
+      }
+    }
+  }
+  .order__table {
+    margin-top: 24px;
+  }
+  .order__btn {
+    width: 141px;
+    height: 51px;
+    font-size: 14px;
+    color: #fff;
+    background-image: none;
+  }
+  .order__table {
+    font-size: 15px;
+    line-height: 26px;
+  }
+  .order__name {
+    font-size: 15px;
+    line-height: 26px;
+  }
+  .order__title {
+    padding-left: 61px;
+  }
+  .order__title::before {
+    width: 51px;
+    height: 51px;
+  }
+  .order h2 {
+    max-width: 400px;
+    margin-bottom: 40px;
+  }
+  .nav--order {
+    margin-bottom: 20px;
+  }
 }

@@ -1,0 +1,64 @@
+.rules {
+  margin-bottom: 100px;
+}
+.rules__title {
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+}
+.rules__list {
+  .reset();
+  list-style: none;
+}
+.rules__item {
+  position: relative;
+  padding-left: 48px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 27px;
+    height: 27px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    border: 1px solid #000000;
+    border-radius: 50%;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 37px;
+    bottom: -20px;
+    left: 13px;
+    width: 1px;
+    background-color: #141415;
+  }
+  &:first-child::before {
+    content: "1";
+  }
+  &:nth-child(2)::before {
+    content: "2";
+  }
+  &:last-child::after {
+    display: none;
+  }
+  &:last-child::before {
+    background-color: @blue;
+    background-image: url(../img/icons/tick.svg);
+    background-repeat: no-repeat;
+    background-size: 14px 10px;
+    background-position: center;
+    border: 0;
+  }
+  &:not(:last-child) {
+    margin-bottom: 45px;
+  }
+}
