@@ -805,9 +805,9 @@ h3 {
   margin-top: 28px;
   margin-bottom: 28px;
 }
-//.footer__info {
-//  padding-left: 0;
-//}
+.footer__info {
+  padding-left: 0;
+}
 .social__item {
   margin-left: 0;
   margin-right: 13px;
@@ -1805,6 +1805,16 @@ h1 {
 .news__info {
   padding: 0;
   padding-top: 20px;
+  font-size: 16px;
+  
+  ul {
+    margin-top: 32px;
+    margin-bottom: 39px;
+    
+    li {
+      line-height: 31px;
+    }
+  }
 }
 .steps__list--contract {
   max-width: 631px;
@@ -2020,27 +2030,31 @@ h1 {
 }
 .rules__list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+//  justify-content: space-between;
   margin-top: 40px;
+  margin-right: -20px;
 }
 .rules__item {
   min-height: 270px;
-  width: 32%;
+  width: 31.7%;
+  margin-right: 20px;
   padding: 30px;
   padding-top: 112px;
   padding-right: 98px;
   font-size: 20px;
   line-height: 28px;
 }
+.rules__item,
 .rules__item:not(:last-child) {
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 .rules {
   margin-bottom: 138px;
   background-image: url(../img/images/bg-line.svg);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: auto 350px;
+  background-position: bottom 100px center;
 }
 .docs__maintitle {
   margin-bottom: 14px;
@@ -2048,9 +2062,37 @@ h1 {
 .help--order {
   margin-bottom: 157px;
 }
+.product--warranty,
 .partner--order .partner__mobile {
   display: block;
 }
+.product--warranty {
+  .product__list {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .product__item {
+    min-height: 295px;
+    height: auto;
+  }
+}
+.product--docs {
+  .product__list {
+    width: 100%;
+    justify-content: flex-start;
+    margin-right: -20px;
+  }
+  .product__item {
+    width: 31.7%;
+    height: auto;
+    min-height: 353px;
+    margin-right: 20px;
+  }
+}
+.rules__img {
+  height: 422px;
+}
+
 }
 //---------------------------------------------
 @media (min-width: 1290px) {

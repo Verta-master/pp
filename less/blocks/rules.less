@@ -10,6 +10,7 @@
 .rules__list {
   .reset();
   list-style: none;
+  counter-reset: myCounter;
 }
 .rules__item {
   position: relative;
@@ -19,7 +20,8 @@
   line-height: 24px;
   
   &::before {
-    content: "";
+    counter-increment: myCounter;
+    content: counter(myCounter);
     position: absolute;
     top: 0;
     left: 0;
@@ -41,16 +43,11 @@
     width: 1px;
     background-color: #141415;
   }
-  &:first-child::before {
-    content: "1";
-  }
-  &:nth-child(2)::before {
-    content: "2";
-  }
   &:last-child::after {
     display: none;
   }
   &:last-child::before {
+    font-size: 0;
     background-color: @blue;
     background-image: url(../img/icons/tick.svg);
     background-repeat: no-repeat;
@@ -60,5 +57,23 @@
   }
   &:not(:last-child) {
     margin-bottom: 45px;
+  }
+}
+.rules__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  height: 191px;
+  border-radius: 30px;
+  overflow: hidden;
+  
+  img {
+    display: block;
+    flex: 0 0 auto;
+    height: 100%;
+    width: auto;
+    max-width: none;
+    border-radius: 30px;
   }
 }

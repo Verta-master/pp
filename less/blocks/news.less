@@ -19,6 +19,29 @@
   h2 {
     margin-top: 0;
   }
+  ul {
+    .reset();
+    list-style: none;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    
+    li {
+      position: relative;
+      padding-left: 21px;
+      line-height: 29px;
+      
+      &::before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: @blue;
+      }
+    }
+  }
 }
 .news__img {
   height: 160px;
@@ -38,4 +61,12 @@
     max-width: none;
     border-radius: 12px;
   }
+}
+.news__comment {
+  max-width: 220px;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #737581;
 }
