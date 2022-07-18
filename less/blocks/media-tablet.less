@@ -1724,6 +1724,7 @@
   }
   .docs__wrap {
     padding: 45px 57px;
+    padding-bottom: 35px;
   }
   .docs__list {
     margin-top: 45px;
@@ -1733,7 +1734,7 @@
     align-items: center;
   }
   .docs__item {
-    width: 49%;
+    width: 50%;
     margin-bottom: 22px;
     font-size: 16px;
     line-height: 1.2;
@@ -1746,6 +1747,9 @@
         pointer-events: none;
         color: #737581;
       }
+    }
+    &:nth-child(2n) {
+      padding-left: 40px;
     }
   }
   .order__table {
@@ -1769,15 +1773,42 @@
   .order__title {
     padding-left: 61px;
   }
-  .order__title::before {
-    width: 51px;
-    height: 51px;
-  }
   .order h2 {
     max-width: 400px;
     margin-bottom: 40px;
   }
   .nav--order {
     margin-bottom: 20px;
+  }
+  .tariff--order {
+    margin-bottom: 80px;
+  }
+  .order__list {
+    margin-top: 23px;
+  }
+  .order__item {
+    padding-top: 41px;
+    padding-right: 47px;
+    padding-left: 38px;
+    padding-bottom: 41px;
+    margin-top: 14px;
+  }
+  .order__title {
+    padding-left: 52px;
+    
+    &::before {
+      top: -9px;
+      width: 51px;
+      height: 51px;
+    }
+  }
+  .order__table {
+    margin-top: 10px;
+  }
+  .order__table td {
+    padding-bottom: 16px;
+  }
+  .docs {
+    margin-bottom: 130px;
   }
 }
