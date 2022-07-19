@@ -63,5 +63,5 @@ var mySwiper = new Swiper ('.menu__slider', {
   spaceBetween: 20,
 });
 
-//Select styles
-//$('select').niceSelect();
+//Select
+$('select').selectmenu();
