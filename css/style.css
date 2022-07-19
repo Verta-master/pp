@@ -4853,6 +4853,65 @@ a.breadcrumbs__link:active::after {
 .service__item:first-child {
   padding-top: 0;
 }
+.invoice {
+  margin-bottom: 97px;
+}
+.invoice__table {
+  margin-top: 63px;
+  margin-bottom: 35px;
+  margin-left: -15px;
+  margin-right: -15px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.35);
+  overflow: hidden;
+}
+.invoice__table table {
+  border-collapse: collapse;
+}
+.invoice__table table tr:nth-child(2n + 1) td {
+  background-color: #fff;
+}
+.invoice__table table td {
+  width: 50%;
+  vertical-align: top;
+  min-height: 73px;
+  padding: 14px 10px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+}
+.invoice__print {
+  display: none;
+}
+.invoice__save {
+  width: 304px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #141415;
+  background-color: #FFFFFF;
+}
+.invoice__save span {
+  position: relative;
+  padding-right: 47px;
+}
+.invoice__save span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/icons/save.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.invoice__save:hover span::after,
+.invoice__save:active span::after {
+  -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+          filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
 @media (min-width: 360px) {
   .footer__block address {
     max-width: 240px;
@@ -6911,6 +6970,73 @@ a.breadcrumbs__link:active::after {
   }
   .tariff--offer {
     margin-bottom: 80px;
+  }
+  .invoice {
+    margin-bottom: 130px;
+  }
+  .invoice__table {
+    margin-top: 65px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 45px;
+  }
+  .invoice__table table {
+    width: 100%;
+  }
+  .invoice__table table td {
+    padding: 12px 30px;
+    padding-right: 10px;
+    font-size: 15px;
+    line-height: 24px;
+    min-height: 70px;
+    height: 70px;
+    vertical-align: middle;
+  }
+  .invoice__table table td:last-child {
+    width: 60%;
+  }
+  .invoice__table table td:first-child {
+    width: 40%;
+  }
+  .invoice__print,
+  .invoice__btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .invoice__print {
+    margin-right: 15px;
+    width: 198px;
+  }
+  .invoice__print span {
+    position: relative;
+    padding-right: 47px;
+  }
+  .invoice__print span::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/icons/print.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .invoice__print:hover,
+  .invoice__print:active {
+    color: rgba(43, 63, 108, 0.5);
+  }
+  .invoice__print:hover span::after,
+  .invoice__print:active span::after {
+    -webkit-filter: invert(20%) sepia(11%) saturate(5254%) hue-rotate(191deg) brightness(88%) contrast(82%);
+            filter: invert(20%) sepia(11%) saturate(5254%) hue-rotate(191deg) brightness(88%) contrast(82%);
+  }
+  .invoice__save {
+    margin-left: 0;
+    width: 196px;
   }
 }
 @media (min-width: 1200px) {
@@ -9282,6 +9408,23 @@ a.breadcrumbs__link:active::after {
   }
   .tariff--offer {
     margin-bottom: 64px;
+  }
+  .invoice__table table td {
+    font-size: 16px;
+    padding-left: 40px;
+  }
+  .invoice__table table td:first-child {
+    width: 30%;
+  }
+  .invoice__table table td:last-child {
+    width: 70%;
+    padding-left: 50px;
+  }
+  .invoice__table {
+    margin-top: 62px;
+  }
+  .invoice {
+    margin-bottom: 120px;
   }
 }
 @media (min-width: 1290px) {
