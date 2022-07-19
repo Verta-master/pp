@@ -684,7 +684,7 @@ h5 {
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
-.nav__link--active:after {
+.nav__link--active::after {
   content: "";
   position: absolute;
   bottom: -1px;
@@ -5171,6 +5171,67 @@ a.breadcrumbs__link:active::after {
 .office__map {
   display: none;
 }
+.tabs {
+  margin-top: 61px;
+}
+.tabs__nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 23px;
+  border-bottom: 1px solid #C5C9D5;
+  width: 670px;
+}
+.tabs__nav .ui-tabs-active a {
+  color: #254BFF;
+}
+.tabs__nav .ui-tabs-active::after {
+  display: block;
+}
+.tabs__name {
+  position: relative;
+  margin-right: 30px;
+}
+.tabs__name a {
+  display: block;
+  padding-bottom: 15px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #4B4C54;
+  text-decoration: none;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.tabs__name a:hover,
+.tabs__name a:active {
+  color: #254BFF;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.tabs__name::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #254BFF;
+  display: none;
+}
+.tabs__wrap {
+  width: 100%;
+  overflow-x: scroll;
+}
+.tabs__field .faq__list {
+  margin-top: 0;
+}
 @media (min-width: 360px) {
   .footer__block address {
     max-width: 240px;
@@ -7422,6 +7483,9 @@ a.breadcrumbs__link:active::after {
   .contacts__data {
     margin-top: 56px;
   }
+  .tabs__nav {
+    width: 100%;
+  }
 }
 @media (min-width: 1200px) {
   .header {
@@ -8703,8 +8767,12 @@ a.breadcrumbs__link:active::after {
   .card__parameters {
     margin-bottom: 120px;
   }
+  .faq--internal .faq__item:nth-child(2n),
   .faq--top .faq__item:nth-child(2n) {
     top: 0;
+  }
+  .faq--internal {
+    margin-bottom: 108px;
   }
   .card {
     margin-top: 60px;
@@ -9902,6 +9970,9 @@ a.breadcrumbs__link:active::after {
   }
   .office__list {
     margin-bottom: 20px;
+  }
+  .tabs__name {
+    margin-right: 35px;
   }
 }
 @media (min-width: 1290px) {
