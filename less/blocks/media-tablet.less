@@ -1920,4 +1920,71 @@
   .tariff--offer {
     margin-bottom: 80px;
   }
+  .invoice {
+    margin-bottom: 130px;
+  }
+  .invoice__table {
+    margin-top: 65px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 45px;
+    
+    table {
+      width: 100%;
+    }
+  }
+  .invoice__table table td {
+    padding: 12px 30px;
+    padding-right: 10px;
+    font-size: 15px;
+    line-height: 24px;
+    min-height: 70px;
+    height: 70px;
+    vertical-align: middle;
+    
+    &:last-child {
+      width: 60%;
+    }
+    &:first-child {
+      width: 40%;
+    }
+  }
+  .invoice__print,
+  .invoice__btns {
+    display: flex;
+  }
+  .invoice__print {
+    margin-right: 15px;
+    width: 198px;
+    
+    span {
+      position: relative;
+      padding-right: 47px;
+      
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 24px;
+        height: 24px;
+        background-image: url(../img/icons/print.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+    &:hover,
+    &:active {
+      color: rgba(43, 63, 108, 0.5);
+      
+      span::after {
+        filter: invert(20%) sepia(11%) saturate(5254%) hue-rotate(191deg) brightness(88%) contrast(82%);
+      }
+    }
+  }
+  .invoice__save {
+    margin-left: 0;
+    width: 196px;
+  }
 }
