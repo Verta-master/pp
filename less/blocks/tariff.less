@@ -151,3 +151,18 @@
     margin-top: 0;
   }
 }
+.tariff__list--offer {
+  .tariff__item {
+    padding-right: 38px;
+    
+    &:first-child::before {
+      background-image: url(../img/icons/offer-1.png);
+    }
+    &:nth-child(2)::before {
+      background-image: url(../img/icons/offer-2.png);
+    }
+    &:nth-child(3)::before {
+      background-image: url(../img/icons/offer-3.png);
+    }
+  }
+}
