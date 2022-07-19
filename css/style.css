@@ -3476,6 +3476,15 @@ a.breadcrumbs__link:active::after {
 .tariff--order {
   margin-bottom: 87px;
 }
+.tariff--404 h1 {
+  margin-bottom: 10px;
+}
+.tariff--404 p {
+  margin-top: 0;
+}
+.tariff--404 .tariff__btn {
+  width: 235px;
+}
 .tariff__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6882,6 +6891,12 @@ a.breadcrumbs__link:active::after {
   .rules--line {
     margin-bottom: 130px;
   }
+  .tariff--404 .tariff__title {
+    padding-top: 30px;
+  }
+  .tariff--404 .tariff__img {
+    margin-bottom: 10px;
+  }
 }
 @media (min-width: 1200px) {
   .header {
@@ -9233,6 +9248,18 @@ a.breadcrumbs__link:active::after {
   }
   .service__item p {
     margin-bottom: 4px;
+  }
+  .tariff--404 {
+    margin-top: 28px;
+  }
+  .tariff--404 h1 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .tariff--404 .tariff__title {
+    padding-top: 48px;
+    padding-bottom: 36px;
   }
 }
 @media (min-width: 1290px) {
