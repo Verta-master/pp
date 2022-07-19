@@ -33,6 +33,8 @@
   
   &--active {
     position: relative;
+    color: @blue;
+    .transition();
     
     &:after {
       content: "";
@@ -44,7 +46,13 @@
       background-color: @blue;
     }
   }
+  &:hover,
+  &:active {
+    color: @blue;
+    .transition();
+  }
 }
+.nav__link span,
 .nav--order .more-arrow,
 .nav__date,
 .nav--card {

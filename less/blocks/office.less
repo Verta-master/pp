@@ -1,0 +1,132 @@
+.office {
+  margin-bottom: 100px;
+  
+  .nav .more-arrow {
+    display: none;
+  }
+  .nav {
+    margin-top: 28px;
+    margin-bottom: 25px;
+  }
+}
+.office__block {
+  margin-bottom: 10px;
+  padding: 35px 25px 25px;
+  background: #FFFFFF;
+  border-radius: 25px;
+}
+.office__btn {
+  width: 100%;
+  
+  span {
+    position: relative;
+    padding-right: 39px;
+    
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      width: 24px;
+      height: 24px;
+      background-image: url(../img/icons/route.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  &--route {
+    display: none;
+  }
+  &:hover,
+  &:active {
+    color: rgba(43, 63, 108, 0.5);
+
+    span::after {
+      filter: invert(20%) sepia(11%) saturate(5254%) hue-rotate(191deg) brightness(88%) contrast(82%);
+    }
+  }
+}
+.office__contacts {
+  address {
+    display: block;
+    margin-bottom: 38px;
+    font-size: 18px;
+    line-height: 25px;
+    
+    b {
+      font-weight: 600;
+    }
+  }
+}
+.office__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 36px;
+  
+  .social {
+    order: 2;
+    margin-bottom: 25px;
+    margin-right: 7px;
+  }
+  .social__link {
+    width: 32px;
+    height: 32px;
+  }
+  .social__item {
+    margin-left: 13px;
+  }
+}
+.office__phone {
+  order: 1;
+  margin-bottom: 25px;
+}
+.office__mail {
+  order: 3;
+}
+.office__link {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+  text-decoration: none;
+}
+.office__comment {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #737581;
+}
+.contacts__list,
+.office__list {
+  .reset();
+  list-style: none;
+  margin-bottom: 40px;
+  
+  li {
+    position: relative;
+    padding-left: 19px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: @blue;
+    }
+  }
+}
+.office__map {
+  display: none;
+}
