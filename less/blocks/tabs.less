@@ -1,0 +1,61 @@
+.tabs {
+  margin-top: 61px;
+}
+.tabs__nav {
+  .reset();
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 23px;
+  border-bottom: 1px solid #C5C9D5;
+  width: 670px;
+
+  .ui-tabs-active {
+    a {
+      color: @blue;
+    }
+    &::after {
+      display: block;
+    }
+  }
+}
+.tabs__name {
+  position: relative;
+  margin-right: 30px;
+
+  a {
+    display: block;
+    padding-bottom: 15px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4B4C54;
+    text-decoration: none;
+    .transition();
+
+    &:hover,
+    &:active {
+      color: @blue;
+      .transition();
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: @blue;
+    display: none;
+  }
+}
+.tabs__wrap {
+  width: 100%;
+  overflow-x: scroll;
+}
+.tabs__field {
+  .faq__list {
+    margin-top: 0;
+  }
+}
