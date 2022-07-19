@@ -3629,6 +3629,18 @@ a.breadcrumbs__link:active::after {
   height: 50px;
   margin-top: 0;
 }
+.tariff__list--offer .tariff__item {
+  padding-right: 38px;
+}
+.tariff__list--offer .tariff__item:first-child::before {
+  background-image: url(../img/icons/offer-1.png);
+}
+.tariff__list--offer .tariff__item:nth-child(2)::before {
+  background-image: url(../img/icons/offer-2.png);
+}
+.tariff__list--offer .tariff__item:nth-child(3)::before {
+  background-image: url(../img/icons/offer-3.png);
+}
 .offer {
   margin-bottom: 100px;
 }
@@ -6897,6 +6909,9 @@ a.breadcrumbs__link:active::after {
   .tariff--404 .tariff__img {
     margin-bottom: 10px;
   }
+  .tariff--offer {
+    margin-bottom: 80px;
+  }
 }
 @media (min-width: 1200px) {
   .header {
@@ -9260,6 +9275,13 @@ a.breadcrumbs__link:active::after {
   .tariff--404 .tariff__title {
     padding-top: 48px;
     padding-bottom: 36px;
+  }
+  .info__title--show {
+    font-size: 30px;
+    line-height: 39px;
+  }
+  .tariff--offer {
+    margin-bottom: 64px;
   }
 }
 @media (min-width: 1290px) {
