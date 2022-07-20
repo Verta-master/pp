@@ -818,17 +818,17 @@ h3 {
 .footer__link, 
 .footer__menu li a {
   line-height: 2;
+  .transition();
   
   &:hover,
   &:active {
-    text-decoration: underline;
+    opacity: 0.5;
+    .transition();
   }
 }
+.catalog__btn,
 .contacts__link,
-.office__link,
-.footer__call,
-.footer__mail,
-.footer__phone {
+.office__link {
   &:hover,
   &:active {
     color: @blue;
@@ -1079,8 +1079,9 @@ h1 {
   
   &:hover,
   &:active {
-    color: @blue;
-    background-color: @light;
+    color: #2647E6;
+    background: #fff;
+    box-shadow: 0 14px 64px 0 rgba(0,0,0,0.12);
     .transition();
   }
 }
@@ -2619,6 +2620,9 @@ h1 {
 .review {
   margin-bottom: 120px;
 }
+.tariff__btns .tariff__btn {
+  margin-right: 10px;
+}
 }
 //---------------------------------------------
 @media (min-width: 1290px) {
@@ -2641,5 +2645,8 @@ h1 {
   }
   .blog__slider {
     padding-left: ~"calc(50% - 640px)";
+  }
+  .tariff__btns .tariff__btn {
+    margin-right: 40px;
   }
 }
