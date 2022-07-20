@@ -92,12 +92,13 @@
   &--active {
     .menu__link {
       color: #2647E6;
-      
-      &::before {
-        width: 100%;
-        opacity: 1;
-        .transition();
-      }
+      .transition();
+    }
+  }
+  &--active {
+    .menu__link::before {
+      width: 100%;
+      opacity: 1;
     }
   }
   &:hover .menu__link {
@@ -116,6 +117,7 @@
   font-size: 15px;
   line-height: 1.2;
   color: #4B4C54;
+  .transition();
   
   &::before {
     content: "";
@@ -155,6 +157,18 @@
 .promo__btns,
 .promo__list {
   margin-right: 0;
+}
+.promo__list {
+  margin-top: 0;
+}
+.promo__link {
+  .transition();
+  
+  &:hover,
+  &:active {
+    opacity: 0.5;
+    .transition();
+  }
 }
 .promo {
   margin-bottom: 50px;
@@ -663,7 +677,7 @@ h3 {
   top: 0;
 }
 .blog__slider {
-  padding-left: 80px;
+  padding-left: ~"calc(50% - 595px)";
 }
 .blog__slide {
   width: 413px;
@@ -697,6 +711,8 @@ h3 {
     height: 20px;
   }
 }
+.service__slide .more-btn:hover,
+.service__slide .more-btn:active,
 .blog__link:hover .more-btn {
   background: #E9EDFD;
     
@@ -802,6 +818,22 @@ h3 {
 .footer__link, 
 .footer__menu li a {
   line-height: 2;
+  
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+}
+.contacts__link,
+.office__link,
+.footer__call,
+.footer__mail,
+.footer__phone {
+  &:hover,
+  &:active {
+    color: @blue;
+    .transition;
+  }
 }
 .footer__info .footer__link {
   margin-top: 28px;
@@ -813,6 +845,13 @@ h3 {
 .social__item {
   margin-left: 0;
   margin-right: 13px;
+  .transition();
+  
+  &:hover,
+  &:active {
+    opacity: 0.7;
+    .transition();
+  }
 }
 .modal {
   width: 1290px;
@@ -879,6 +918,10 @@ h3 {
   li a:active {
     color: #4664EF;
     text-decoration: underline;
+    
+    b {
+      color: #4664EF;
+    }
   }
 }
 .menu__slider {
@@ -1030,6 +1073,16 @@ h1 {
 .catalog__btns {
   position: relative;
   top: 10px;
+}
+.catalog__btn {
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: @blue;
+    background-color: @light;
+    .transition();
+  }
 }
 .catalog__about {
   padding-top: 0;
@@ -1397,6 +1450,14 @@ h1 {
   font-size: 16px;
   line-height: 32px;
   font-weight: 600;
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: @blue;
+    border-color: @blue;
+    .transition();
+  }
 }
 .connect__block {
   height: 353px;
@@ -1416,6 +1477,7 @@ h1 {
 .connect {
   margin-bottom: 60px;
 }
+.catalog__btns .more-link,
 .connect__block .more-btn {
   background-color: #E9EDFD;
   
@@ -1577,6 +1639,7 @@ h1 {
   color: @blue;
   border-radius: 12px;
   background-color: rgba(38, 71, 230, 0.1);
+  cursor: pointer;
   
   &::placeholder {
     opacity: 1;
@@ -1586,7 +1649,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  overflow-x: auto;
+  overflow-x: unset;
   
   &--blog {
     border-bottom: 0;
@@ -1623,6 +1686,15 @@ h1 {
 .page__link {
   font-size: 15px;
   line-height: 18px;
+  
+  &:hover,
+  &:active {
+    color: #141415;
+    
+    &::before {
+      filter: invert(2%) sepia(2%) saturate(3755%) hue-rotate(192deg) brightness(91%) contrast(88%);
+    }
+  }
 }
 .page__nav {
   padding-left: 40px;
@@ -2029,6 +2101,12 @@ h1 {
 .docs__item:nth-child(2n) {
   padding-left: 48px;
 }
+.docs__item a {
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+}
 .rules__title,
 .docs__maintitle {
   font-size: 30px;
@@ -2363,6 +2441,44 @@ h1 {
 .tabs__name {
   margin-right: 35px;
 }
+.promo__next,
+.promo__prev {
+  display: block;
+  width: 52px;
+  height: 52px;
+  bottom: 75px;
+  top: auto;
+  border-radius: 50%;
+  background-color: @blue;
+  background-image: url(../img/icons/next.svg);
+  background-repeat: no-repeat;
+  background-size: 27px 16px;
+  background-position: center;
+  
+  &::after {
+    display: none;
+  }
+}
+.promo__next {
+  right: 40px;
+}
+.promo__prev {
+  transform: rotate(180deg);
+  left: auto;
+  right: 107px;
+}
+.nav .more-arrow {
+  &:hover,
+  &:active {
+    color: #141415;
+    .transition();
+    
+    svg {
+      fill: #141415;
+      .transition();
+    }
+  }
+}
 }
 //---------------------------------------------
 @media (min-width: 1290px) {
@@ -2381,6 +2497,9 @@ h1 {
     width: 540px;
   }
   .tariff--warranty .nav__link {
-    margin-right: 45px;
+    margin-right: 40px;
+  }
+  .blog__slider {
+    padding-left: ~"calc(50% - 640px)";
   }
 }
