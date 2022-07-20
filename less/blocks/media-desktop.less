@@ -2479,6 +2479,146 @@ h1 {
     }
   }
 }
+.review__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.review__item {
+  width: 49%;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.review__subtitle {
+  margin-bottom: 46px;
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 26px;
+}
+.nav__sorting {
+  width: 360px;
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  
+  span {
+    display: block;
+    margin-right: 23px;
+  }
+}
+.nav--review .nav__wrap {
+  width: ~"calc(100% - 350px)";
+  border-bottom: 1px solid #c5c9d5;
+}
+.nav--review {
+  border-bottom: 0;
+  margin-bottom: 15px;
+  
+  .nav__link span {
+    color: #737581;
+  }
+}
+.review__btns {
+  margin-top: auto;
+}
+.review__data {
+  width: ~"calc(100% - 75px)";
+}
+.review__name {
+  font-size: 18px;
+  line-height: 24px;
+}
+.review__value,
+.review__company {
+  font-size: 16px;
+  line-height: 24px;
+}
+.review__text {
+  font-size: 16px;
+  line-height: 26px;
+}
+.review__top {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.review__rating {
+  display: block;
+  width: 100px;
+  text-align: right;
+}
+.review__person {
+  flex-grow: 1;
+}
+.review__value {
+  margin: 0;
+  color: #737581;
+}
+.review__mark {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+.review__btn {
+  display: flex;
+  width: 217px;
+  margin-right: 15px;
+}
+.review__number,
+.review__morebtns,
+.review__btns {
+  display: flex;
+  align-items: center;
+}
+.review__scan {
+  font-weight: 600;
+  color: @blue;
+  background-color: @light;
+  .transition();
+  
+  span::before {
+    background-image: url(../img/icons/review-blue.svg);
+  }
+  &:hover,
+  &:active {
+    color: #fff;
+    background-color: @blue;
+    .transition();
+    
+    span::before {
+      background-image: url(../img/icons/review.svg);
+    }
+  }
+}
+.review__number,
+.review__morebtns {
+  justify-content: center;
+}
+.review__morebtns {
+  margin-top: 15px;
+}
+.review__more {
+  width: 223px;
+}
+.review__number {
+  margin-left: 15px;
+  width: 65px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  background: #FFFFFF;
+  border-radius: 12px;
+}
+.review {
+  margin-bottom: 120px;
+}
 }
 //---------------------------------------------
 @media (min-width: 1290px) {

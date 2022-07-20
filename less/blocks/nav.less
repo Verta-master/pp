@@ -1,26 +1,24 @@
-//.nav__wrap,
-//.nav {
-//  display: flex;
-//  align-items: center;
-//}
 .nav {
   justify-content: space-between;
   margin-bottom: 25px;
   border-bottom: 1px solid #C5C9D5;
+  overflow-x: scroll;
   
   .more-arrow {
     padding-bottom: 16px;
   }
-  overflow-x: scroll;
-  
   &--order {
     margin-top: 30px;
+  }
+  &--review {
+    margin-top: 60px;
   }
 }
 .nav__wrap {
   width: 600px;
 }
 .nav__link {
+  position: relative;
   display: inline-block;
   vertical-align: middle;
   padding-bottom: 15px;
@@ -30,31 +28,52 @@
   line-height: 17px;
   color: #4B4C54;
   text-decoration: none;
+  cursor: pointer;
   
-  &--active {
-    position: relative;
-    color: @blue;
-    .transition();
-    
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: -1px;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background-color: @blue;
-    }
-  }
   &:hover,
   &:active {
     color: @blue;
     .transition();
   }
 }
+.nav__sorting,
+.nav__checkbox,
 .nav__link span,
 .nav--order .more-arrow,
 .nav__date,
 .nav--card {
   display: none;
+}
+.nav__link--active,
+.nav__checkbox:checked + .nav__link {
+  color: @blue;
+  .transition();
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: @blue;
+  }
+}
+.nav .ui-selectmenu-button.ui-button,
+.nav__select {
+  display: block;
+  margin-right: 0;
+  margin-bottom: 0;
+  width: 196px;
+  height: 50px;
+  padding: 16px 25px;
+  color: #2647E6;
+  border-radius: 12px;
+  border-color: rgba(255,255,255,0);
+  background-color: rgba(38, 71, 230, 0.1);
+  
+  &::placeholder {
+    color: #737581;
+    opacity: 1;
+  }
 }
