@@ -217,9 +217,9 @@
       <div class="wrapper">
         <nav class="nav nav--card">
           <div class="nav__wrap">
-            <a href="#" class="nav__link">Требования к клиену</a>
-            <a href="#" class="nav__link">Информация о банке</a>
-            <a href="#" class="nav__link">Частые ыопросы/FAQ</a>
+            <a href="#client" class="nav__link">Требования к клиену</a>
+            <a href="#info" class="nav__link">Информация о банке</a>
+            <a href="#faq" class="nav__link">Частые ыопросы/FAQ</a>
           </div>
           <a href="#" class="more-arrow">
             <span>Калькулятор гарантии</span>
@@ -271,7 +271,7 @@
           </div>
         </div>
         
-        <div class="card__block">
+        <div class="card__block" id="client">
           <div class="card__column">
             <p class="card__details details"><span>Требования к клиенту<i>Какая то очень важная информация - может быть и в несколько строк</i></span></p>
             <div class="table card__table">
@@ -348,7 +348,7 @@
           </div>
         </div>
         
-        <div class="card__parameters">
+        <div class="card__parameters" id="info">
           <h2>Показатели банка</h2>
           <ul class="card__list">
             <li>Место по активам — <span>2</span></li>
@@ -406,7 +406,7 @@
       </div>
     </section>
     
-    <section class="faq faq--top">
+    <section class="faq faq--top" id="faq">
       <div class="wrapper">
         <h2>Частые вопросы</h2>
         <ul class="faq__list">
@@ -572,6 +572,8 @@
   <script src="js/jquery.nicescroll.min.js"></script>
   <script src="js/filter.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/scroll-anchor.js"></script>
+  <script src="js/scroll-nav.js"></script>
   
   <script>
     $('.sidebar__wrap').niceScroll({

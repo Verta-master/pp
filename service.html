@@ -490,5 +490,12 @@
   <script src="js/range-slider.js"></script>
   <script src="js/jquery.nicescroll.min.js"></script>
   <script src="js/script.js"></script>
+  
+  <script>
+    $('.faq__title').click(function() {
+      $(this).toggleClass('faq__title--open');
+      $(this).next().slideToggle();
+    })
+  </script>
 </body>
 </html>
