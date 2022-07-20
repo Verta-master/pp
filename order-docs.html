@@ -1087,9 +1087,11 @@
       $(this).next().slideToggle();
     })
     
-    $('.nav').niceScroll({
-      cursorcolor: '#2647E6',
-    });
+    if (window.innerWidth < 1200) {
+      $('.nav').niceScroll({
+        cursorcolor: '#2647E6',
+      });
+    }
   </script>
 </body>
 </html>

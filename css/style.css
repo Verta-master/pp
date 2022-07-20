@@ -583,7 +583,9 @@ h5 {
 .btn--blue:hover,
 .btn--blue:active {
   color: #2647E6;
-  background: #E9EDFD;
+  background: #fff;
+  -webkit-box-shadow: 0 14px 64px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 14px 64px 0 rgba(0, 0, 0, 0.12);
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
@@ -8648,23 +8650,23 @@ a.breadcrumbs__link:active::after {
   .footer__link,
   .footer__menu li a {
     line-height: 2;
+    -webkit-transition: ease-out 0.3s;
+    transition: ease-out 0.3s;
   }
   .footer__link:hover,
   .footer__menu li a:hover,
   .footer__link:active,
   .footer__menu li a:active {
-    text-decoration: underline;
+    opacity: 0.5;
+    -webkit-transition: ease-out 0.3s;
+    transition: ease-out 0.3s;
   }
+  .catalog__btn:hover,
   .contacts__link:hover,
   .office__link:hover,
-  .footer__call:hover,
-  .footer__mail:hover,
-  .footer__phone:hover,
+  .catalog__btn:active,
   .contacts__link:active,
-  .office__link:active,
-  .footer__call:active,
-  .footer__mail:active,
-  .footer__phone:active {
+  .office__link:active {
     color: #254BFF;
     -webkit-transition: ease-out 0.3s;
     transition: ease-out 0.3s;
@@ -8928,8 +8930,10 @@ a.breadcrumbs__link:active::after {
   }
   .catalog__btn:hover,
   .catalog__btn:active {
-    color: #254BFF;
-    background-color: #E9EDFD;
+    color: #2647E6;
+    background: #fff;
+    -webkit-box-shadow: 0 14px 64px 0 rgba(0, 0, 0, 0.12);
+            box-shadow: 0 14px 64px 0 rgba(0, 0, 0, 0.12);
     -webkit-transition: ease-out 0.3s;
     transition: ease-out 0.3s;
   }
@@ -10575,6 +10579,9 @@ a.breadcrumbs__link:active::after {
   .review {
     margin-bottom: 120px;
   }
+  .tariff__btns .tariff__btn {
+    margin-right: 10px;
+  }
 }
 @media (min-width: 1290px) {
   .wrapper {
@@ -10596,5 +10603,8 @@ a.breadcrumbs__link:active::after {
   }
   .blog__slider {
     padding-left: calc(50% - 640px);
+  }
+  .tariff__btns .tariff__btn {
+    margin-right: 40px;
   }
 }
