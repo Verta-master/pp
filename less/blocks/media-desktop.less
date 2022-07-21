@@ -876,9 +876,6 @@ h3 {
 .modal__social .social {
   margin-top: 30px;
 }
-.header {
-  position: relative;
-}
 .menu__dropdown {
   position: absolute;
   top: 100%;
@@ -958,7 +955,12 @@ h3 {
   width: 100%;
   height: 100%;
 }
+.internal,
+main {
+  padding-top: 182px;
+}
 main::before {
+  top: 152px;
   height: 345px;
 }
 .breadcrumbs {
@@ -1647,10 +1649,12 @@ h1 {
   }
 }
 .nav {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   overflow-x: unset;
+//  background-color: #fff;
   
   &--blog {
     border-bottom: 0;
@@ -1658,6 +1662,17 @@ h1 {
     .nav__wrap {
       border-bottom: 1px solid #C5C9D5;
     }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    background-color: #fff;
   }
 }
 .nav__wrap {

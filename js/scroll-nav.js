@@ -16,7 +16,7 @@ $(document).ready(function () {
         menu = target;
     $target = $(target);
     $('html, body').stop().animate({
-        'scrollTop': $target.offset().top
+        'scrollTop': $target.offset().top - 200
     }, 500, 'swing', function () {
         $(document).on("scroll", onScroll);
     });
@@ -24,7 +24,7 @@ $(document).ready(function () {
 });
 
 function onScroll(event){
-  var scrollPos = $(document).scrollTop();
+  var scrollPos = $(document).scrollTop() - 200;
   $('.nav__link').each(function () {
       event.preventDefault();
       var currLink = $(this);
@@ -35,3 +35,12 @@ function onScroll(event){
       }
   });
 };
+
+$('.nav').sticky({
+  topSpacing: 152,
+  zIndex: 900,
+  responsiveWidth: true,
+});
+if(window.innerWidth < 1200) {
+  $('.nav').unstick();
+}
