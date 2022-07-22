@@ -89,7 +89,7 @@
   }
   .internal,
   main {
-    padding-top: 130px;
+    padding-top: 116px;
   }
   .wrapper {
     padding-left: 45px;
@@ -385,11 +385,6 @@
   .proposal__table table th:first-child::after {
     display: none;
   }
-  .proposal__table table th {
-    font-size: 15px;
-    line-height: 24px;
-    padding-bottom: 0;
-  }
   .proposal__table table {
     display: table;
     border-spacing: 0 10px;
@@ -402,6 +397,11 @@
   .proposal__table table th {
     display: table-cell;
     padding: 15px;
+  }
+  .proposal__table table th {
+    font-size: 15px;
+    line-height: 24px;
+    padding-bottom: 3px !important;
   }
   .proposal__table table tr {
     display: table-row;
@@ -471,7 +471,7 @@
   }
   .proposal__btns {
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 27px;
   }
   .proposal__btn {
     width: 289px;
@@ -728,7 +728,7 @@
     margin-bottom: 145px;
   }
   .blog {
-    margin-bottom: 124px;
+    margin-bottom: 112px;
     
     .title {
       margin-bottom: 38px;
@@ -1103,6 +1103,7 @@
   .card__info {
     position: relative;
     padding: 40px;
+    padding-bottom: 45px;
     margin-bottom: 20px;
     
     .ui-selectmenu-button.ui-button,
@@ -1134,11 +1135,15 @@
     margin-left: 20px;
     
     table td:last-child {
-      width: 35%;
+      width: 30%;
     }
     table {
       margin-bottom: 0;
     }
+  }
+  .card__table table td:last-child {
+    text-align: left;
+    width: 35%;
   }
   .attention,
   .card__list li {
@@ -1256,6 +1261,15 @@
   }
   .tariff__block {
     padding: 40px;
+    padding-bottom: 14px;
+    font-size: 15px;
+    line-height: 26px;
+  }
+  .tariff__column {
+    margin-bottom: 30px;
+  }
+  .tariff__column .table table td {
+    min-height: 32px;
   }
   .result,
   .help,
@@ -1340,7 +1354,7 @@
     padding-bottom: 30px;
   }
   .connect {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
   .calc--card .calc__title {
     text-align: center;
@@ -2152,5 +2166,8 @@
         background-image: url(../img/icons/review.svg);
       }
     }
+  }
+  .review {
+    margin-bottom: 128px;
   }
 }

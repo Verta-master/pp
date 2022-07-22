@@ -41,6 +41,17 @@ $('.nav').sticky({
   zIndex: 900,
   responsiveWidth: true,
 });
+
 if(window.innerWidth < 1200) {
   $('.nav').unstick();
+  $('.nav').niceScroll({
+    cursorcolor: '#2647E6',
+  });
 }
+
+$('.nav').on('sticky-start', function() {
+  $('.nav').addClass('nav--sticky');
+});
+$('.nav').on('sticky-end', function() { 
+  $('.nav').removeClass('nav--sticky');
+});

@@ -573,7 +573,7 @@ h3 {
   padding-left: 0;
 }
 .last__table {
-  margin-bottom: 57px;
+  margin-bottom: 62px;
 }
 .last__subtitle {
   margin-bottom: 35px;
@@ -727,7 +727,7 @@ h3 {
   display: none;
 }
 .blog {
-  margin-bottom: 83px;
+  margin-bottom: 102px;
 }
 .feedback .wrapper {
   padding-top: 70px;
@@ -957,7 +957,7 @@ h3 {
 }
 .internal,
 main {
-  padding-top: 182px;
+  padding-top: 170px;
 }
 main::before {
   top: 152px;
@@ -1039,7 +1039,7 @@ h1 {
   width: 100%;
 }
 .filter__block {
-  margin-bottom: 35px;
+  margin-bottom: 33px;
 }
 .filter__field--btns {
   margin-top: 0;
@@ -1224,18 +1224,25 @@ h1 {
   display: flex;
   justify-content: space-between;
 }
+.card__wrap {
+  margin-top: 25px;
+}
 .card__btn {
   right: 40px;
   bottom: 26px;
 }
 .card__block {
-  margin-bottom: 80px;
-  padding-top: 45px;
+  margin-bottom: 100px;
+  padding-top: 40px;
+}
+.card__table table td,
+.table table td {
+  line-height: 28px;
 }
 .card__list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 24px;
+  margin-bottom: 30px;
   
   li {
     width: 33.33%;
@@ -1258,7 +1265,8 @@ h1 {
   top: -14px;
 }
 .attention {
-  margin-left: 30px;
+  margin-left: 40px;
+//  padding-left: 70px;
 }
 .card__parameters {
   margin-bottom: 120px;
@@ -1273,7 +1281,7 @@ h1 {
   margin-bottom: 108px;
 }
 .card {
-  margin-top: 60px;
+  margin-top: 48px;
 }
 .card__details {
   font-size: 20px;
@@ -1297,6 +1305,9 @@ h1 {
 .tariff__wrap {
   flex-direction: row;
   justify-content: space-between;
+}
+.tariff--warranty .tariff__wrap {
+  margin-top: 20px;
 }
 .tariff__title {
   padding: 50px 40px;
@@ -1351,19 +1362,33 @@ h1 {
   line-height: 28px;
   margin-bottom: 5px;
 }
-.tariff__block {
-  padding-bottom: 20px;
-}
 .tariff__columns {
   display: flex;
   justify-content: space-between;
 }
+.tariff__block {
+  padding-bottom: 5px;
+}
 .tariff__column {
   width: 49%;
   margin-bottom: 0;
+  padding-top: 10px;
   
+  p {
+    margin-top: 0;
+  }
+  .table {
+    padding-left: 35px;
+  }
   table {
-    line-height: 26px;
+    line-height: 24px;
+  }
+  .table table {
+    margin-bottom: 20px;
+    
+    td {
+      min-height: auto;
+    }
   }
 }
 .tariff {
@@ -1371,6 +1396,7 @@ h1 {
 }
 .offer__top {
   padding: 27px;
+  padding-top: 46px;
   height: 325px;
   margin-bottom: 0;
   display: flex;
@@ -1425,7 +1451,7 @@ h1 {
   margin-bottom: 35px;
 }
 .offer {
-  margin-bottom: 120px;
+  margin-bottom: 126px;
 }
 .calc--offer {
   max-width: 100%;
@@ -1478,7 +1504,7 @@ h1 {
   line-height: 1.7;
 }
 .connect {
-  margin-bottom: 60px;
+  margin-bottom: 42px;
 }
 .catalog__btns .more-link,
 .connect__block .more-btn {
@@ -1657,22 +1683,27 @@ h1 {
 //  background-color: #fff;
   
   &--blog {
+    align-items: flex-end;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-bottom: 0;
     
     .nav__wrap {
       border-bottom: 1px solid #C5C9D5;
     }
   }
-  &::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100vw;
-    background-color: #fff;
+  &--sticky {
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100vw;
+      background-color: #fff;
+    }
   }
 }
 .nav__wrap {
@@ -1683,11 +1714,13 @@ h1 {
   margin-right: 1.5%;
 }
 .blog__list {
+  margin-top: 14px;
   margin-right: -20px;
   justify-content: flex-start;
 }
 .blog h1 {
   margin-top: 0;
+  margin-bottom: 36px;
 }
 .internal--page::before {
   height: 170px;
@@ -1849,12 +1882,13 @@ h1 {
   width: 49%;
 }
 .bid__title {
-  padding-top: 20px;
+  padding-top: 40px;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   
   h2 {
+    margin-bottom: 20px;
     font-size: 26px;
     line-height: 32px;
   }
@@ -2009,7 +2043,7 @@ h1 {
   border-radius: 12px;
 }
 .tariff--warranty {
-  padding-top: 22px;
+  padding-top: 14px;
   margin-bottom: 90px;
   
   .nav__link {
@@ -2033,16 +2067,24 @@ h1 {
   position: relative;
   padding-top: 80px;
 }
+.nav--card {
+  padding-top: 10px;
+  margin-bottom: 0;
+}
 .nav--order {
-  position: absolute;
-  top: 0;
-  left: 45px;
-  right: 45px;
+  padding-top: 10px;
   margin-top: 0;
-  
+//  position: absolute;
+//  top: 0;
+//  left: 45px;
+//  right: 45px;
+//  
   .more-arrow {
     display: block;
   }
+}
+.order--docs .nav--order {
+  margin-top: 0;
 }
 .order h2 {
   margin-bottom: 37px;
@@ -2051,7 +2093,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-top: 0;
+  margin-top: 20px;
 }
 .order__item {
   width: 49%;
@@ -2197,6 +2239,7 @@ h1 {
     width: 100%;
     justify-content: flex-start;
     margin-right: -20px;
+    margin-top: 20px;
   }
   .product__item {
     width: 31.8%;
@@ -2417,6 +2460,7 @@ h1 {
 }
 .office__block {
   padding: 20px;
+  margin-top: 20px;
 }
 .office__map {
   height: 435px;
@@ -2438,6 +2482,13 @@ h1 {
 }
 .contacts {
   .breadcrumbs {
+    margin-bottom: 20px;
+  }
+}
+.office {
+  margin-bottom: 120px;
+  
+  h2 {
     margin-bottom: 20px;
   }
 }
@@ -2502,12 +2553,12 @@ h1 {
 }
 .review__item {
   width: 49%;
-  padding-bottom: 30px;
+  padding-bottom: 34px;
   display: flex;
   flex-direction: column;
 }
 .review__subtitle {
-  margin-bottom: 46px;
+  margin-bottom: 30px;
   margin-top: 20px;
   font-size: 18px;
   line-height: 26px;
@@ -2533,7 +2584,10 @@ h1 {
 }
 .nav--review {
   border-bottom: 0;
-  margin-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
   
   .nav__link span {
     color: #737581;
@@ -2638,6 +2692,13 @@ h1 {
 .tariff__btns .tariff__btn {
   margin-right: 10px;
 }
+.more {
+  font-size: 15px;
+}
+.office .nav {
+  margin: 0;
+  padding-top: 10px;
+}
 }
 //---------------------------------------------
 @media (min-width: 1290px) {
@@ -2648,10 +2709,10 @@ h1 {
     padding-left: 0;
     padding-right: 0;
   }
-  .nav--order {
-    left: 0;
-    right: 0;
-  }
+//  .nav--order {
+//    left: 0;
+//    right: 0;
+//  }
   .catalog__about {
     width: 540px;
   }
