@@ -232,7 +232,7 @@
           </div>
           <div class="nav__sorting">
             <span>Сортировать по:</span>
-            <select name="" id="" class="nav__select">
+            <select class="nav__select">
               <option value="1" selected="">Дате отзыва</option>
               <option value="2">Рейтингу</option>
             </select>
@@ -263,7 +263,7 @@
               <p>Более 7-и лет участвовали в торгах и оформляли уже предодобренные банковские гарантии непосредственно на площадке торгов. Недавно торговая площадка сменила банк-партнёр. Нам не была предоставлена предодобренная банковская гарантия. Нам пришлось обращаться на прямую в различные банки. Но так как мы ИП и были финансовые трудности в 2018году, нам отказывали... </p>
             </div>
             <div class="review__btns">
-              <a href="#" class="btn btn--blue review__btn">Показать полностью</a>
+              <a data-fancybox="" data-src="#review" href="javascript:;" class="btn btn--blue review__btn">Показать полностью</a>
               <a data-fancybox="gallery" href="img/images/review.jpg" class="review__scan"><span>Скан отзыва</span></a>
             </div>
           </li>
@@ -493,9 +493,7 @@
     </div>
   </footer>
   
-  <div class="overlay"></div>
-  
-  <!-- Modal window -->
+  <!-- Modal windows -->
   <div style="display: none;" id="call" class="modal">
     <div class="modal__wrap">
       <p class="modal__title">Написать нам</p>
@@ -525,6 +523,35 @@
     </div>
   </div>
   
+  <div style="display: none;" id="review" class="popup">
+    <div class="review__top">
+      <div class="review__person">
+        <figure class="review__img">
+          <img src="img/icons/pic.svg" alt="Чочиев Инал Петрович" width="24" height="24">
+        </figure>
+        <div class="review__data">
+          <p class="review__name">Чочиев Инал Петрович</p>
+          <p class="review__company">ООО «Строй Монолит»</p>
+        </div>
+      </div>
+      <div class="review__rating">
+        <div class="review__mark">
+          <img src="img/icons/star.svg" alt="rating" width="19" height="17">
+          <b>5</b>
+        </div>
+        <p class="review__value">Отлично</p>
+      </div>
+    </div>
+    <div class="review__text">
+      <p>Более 7-и лет участвовали в торгах и оформляли уже предодобренные банковские гарантии непосредственно на площадке торгов. Недавно торговая площадка сменила банк-партнёр. Нам не была предоставлена предодобренная банковская гарантия. Нам пришлось обращаться на прямую в различные банки. Но так как мы ИП и были финансовые трудности в 2018году, нам отказывали.</p>
+      <p>Более 7-и лет участвовали в торгах и оформляли уже предодобренные банковские гарантии непосредственно на площадке торгов. Недавно торговая площадка сменила банк-партнёр. Нам не была предоставлена предодобренная банковская гарантия. Нам пришлось обращаться на прямую в различные банки. Но так как мы ИП и были финансовые трудности в 2018году, нам отказывали.</p>
+      <p>Более 7-и лет участвовали в торгах и оформляли уже предодобренные банковские гарантии непосредственно на площадке торгов. Недавно торговая площадка сменила банк-партнёр. Нам не была предоставлена предодобренная банковская гарантия. Нам пришлось обращаться на прямую в различные банки. Но так как мы ИП и были финансовые трудности в 2018году, нам отказывали.</p>
+      <p>Более 7-и лет участвовали в торгах и оформляли уже предодобренные банковские гарантии непосредственно на площадке торгов. Недавно торговая площадка сменила банк-партнёр. Нам не была предоставлена предодобренная банковская гарантия. Нам пришлось обращаться на прямую в различные банки. Но так как мы ИП и были финансовые трудности в 2018году, нам отказывали.</p>
+      <p>Более 7-и лет участвовали в торгах и оформляли уже предодобренные банковские гарантии непосредственно на площадке торгов. Недавно торговая площадка сменила банк-партнёр. Нам не была предоставлена предодобренная банковская гарантия. Нам пришлось обращаться на прямую в различные банки. Но так как мы ИП и были финансовые трудности в 2018году, нам отказывали.</p>
+    </div>
+    <a data-fancybox="gallery" href="img/images/review.jpg" class="review__scan"><span>Скан отзыва</span></a>
+  </div>
+  
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -534,13 +561,7 @@
   <script src="js/jquery.nicescroll.min.js"></script>
   <script src="js/filter.js"></script>
   <script src="js/script.js"></script>
-  
-  <script>
-    if (window.innerWidth < 1200) {
-      $('.nav').niceScroll({
-        cursorcolor: '#2647E6',
-      });
-    }
-  </script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/scroll-nav.js"></script>
 </body>
 </html>
